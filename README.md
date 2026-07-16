@@ -19,7 +19,7 @@ To protect maternal health outcomes, the Stage-1 Router skips unstable vector pr
 
 ## 🏗️ Multi-Pass Compilation Pipeline
 
-
+```text
 [ Raw Source Files ]
          │
          ▼
@@ -55,7 +55,7 @@ To protect maternal health outcomes, the Stage-1 Router skips unstable vector pr
          │
          ▼
 [ Verified Runtime-Exportable Knowledge Engine Vault ]
-
+```
 
  ## 🔍 Detailed Phase Breakdown
 
