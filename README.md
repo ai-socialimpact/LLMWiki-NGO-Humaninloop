@@ -60,9 +60,10 @@ Refer to Automatically generated [Routing_Guidance](https://github.com/ai-social
 
 [View in Colab](https://colab.research.google.com/github/ai-socialimpact/LLMWiki-NGO-Humaninloop/blob/main/Nand_Wiki_creation_v2s.ipynb)
 
-## 🏗️ Design of the LLM Wiki Creation System: A Multi-Pass Compilation Pipeline
 
 ## 🔍 How it works: The Design 
+
+## 🏗️ Design of the LLM Wiki Creation System: A Multi-Pass Compilation Pipeline
 
 ### Phase 1: Structural Synthesis
 Establishes system parameters, data configurations, and folder rules.
@@ -86,6 +87,8 @@ Assembles the application-level data routing infrastructure.
 ### Phase 4: Integrity Graph Sealing
 Secures graph consistency and path connections prior to production export.
 *   **Pass 4 (Link Validation Linter):** Evaluates markdown syntax using parsing loops to check if every hyperlink points to a real file on disk, blocks generation on orphaned nodes, and packages the verified engine into a ZIP file for production.
+
+## 🏗️ Design Diagram of the LLM Wiki Creation  
 
 ```text
 [ Raw Source Files ]
