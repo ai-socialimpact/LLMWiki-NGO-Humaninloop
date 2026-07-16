@@ -3,9 +3,9 @@
 
 To safeguard maternal health and prevent inaccurate medical guidance, this architecture uses a deterministic, multi-stage routing engine. 
 
-**High-risk queries are automatically steered away from general advice and redirected to specialized clinical nodes reviewed by medical experts (e.g., SNEHA review for severe maternal anemia).**
+**High-risk queries are automatically steered away from general advice and redirected to specialized clinical nodes reviewed by medical experts (e.g., and flags sections of Wiki for SNEHA review/vetting such as severe maternal anemia).**
 
-So hi-risk preganacy cases are identified and answered with absolute care!! 
+So questions from hi-risk preganant mothers are identified and answered with absolute care (via a systematic multistep reasoning, that identifies high risk mothers, then routes such questions to the most appropriate wiki subsection that has been vetted by medical experts, so the answers provided by the QA system can be trusted. Thus building trust in the NGO community by providing the most apt advice for high risk mothers !! )
 
 
 ### 🚨 Illustrative Example: Emergency Acute Redirection Flow
