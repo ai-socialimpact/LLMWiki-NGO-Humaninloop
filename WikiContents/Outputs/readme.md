@@ -1,7 +1,5 @@
 
-# Pregnancy Health Guide: Verified Manual Extracts
-
-This repository contains verified, verbatim extracts from the authoritative field manual guidelines regarding pregnancy diet, critical danger signs, and supplement tracking.
+# Sample output
 
 ---
 
@@ -24,7 +22,7 @@ This repository contains verified, verbatim extracts from the authoritative fiel
 > - 4-5 chhoti meals aur healthy snacks din bhar mein lein. [Source: Essential Nutrients for A Pregnant Woman.md]
 > - Iron aur Folic Acid ki goliya lena na bhulein. [Source: PNC nutrition and anemia.md]"
 
-#### ⚙️ Re-structured Wiki Thinking
+#### ⚙️  Wiki Thinking
 * **Translation:** User requests an 8-month pregnancy diet plan.
 * **Intent & Protocol:** Classified under `lifestyle_nutrition`. Because a milestone ("8 months / third trimester") is explicitly mentioned, the system activates chronological routing.
 * **File Selection:** Shortlists and approves `maternal_care_trimester_3_and_birth_prep.md` with no negative exclusions applied.
@@ -38,7 +36,7 @@ This repository contains verified, verbatim extracts from the authoritative fiel
 #### 💬 Verbatim   Answer
 > "Pet ke nichle hisse me dard pregnancy ke dauran ek danger sign ho sakta hai. Ye severe abdominal pain kehlata hai aur iske liye turant doctor se sampark karna chahiye. [Source: Ante natal care document.md]"
 
-#### ⚙️ Re-structured Wiki Thinking
+#### ⚙️   Wiki Thinking
 * **Translation:** User asks about the cause of lower abdominal pain during pregnancy.
 * **Intent & Protocol:** Identified as an acute severity or high-alert symptom (`Symptoms/Emergencies`). This automatically triggers a `TRIGGER_ACUTE_REDIRECTION_MANDATE`.
 * **File Selection:** System maps keywords to "severe abdominal pain" and "pregnancy emergency", bypassing standard pools to route directly to `maternal_danger_signs_and_emergencies.md`.
@@ -52,20 +50,10 @@ This repository contains verified, verbatim extracts from the authoritative fiel
 #### 💬 Verbatim   Answer
 > "Calcium ki dawai din mein do baar khana khane ke baad pani ke sath leni chahiye. Iron wali dawai ke sath calcium ki dawai nahi leni chahiye, kyunki dono ek sath lene se asar kam ho sakta hai. [Source: Ante natal care document.md]"
 
-#### ⚙️ Re-structured Wiki Thinking
+#### ⚙️  Wiki Thinking
 * **Translation:** User wants to know when to take calcium medicine and if it can be combined with iron pills.
 * **Intent & Protocol:** Falls under routine maternal care and supplementation (`lifestyle_nutrition`). No specific milestone marker is specified, so generic chronological pooling is utilized.
 * **File Selection:** Reaches across overlapping indices to extract data from `maternal_care_trimester_2.md`, `maternal_care_trimester_3_and_birth_prep.md`, and `maternal_postpartum_care_and_nutrition.md`.
 
 ---
-
-## ⚠️ Medical Disclaimer
-The information presented above is for general educational purposes only. Always consult a qualified healthcare provider for personal diagnoses or clinical treatments. Ensure you double-check physical packaging labels to confirm supplement and medication scheduling.
-
----
-
-## 🚀 Proceeding Further
-If you would like to expand this documentation, let me know if we should extract text for:
-* **Child Immunization Timelines** (e.g., BCG, DPT, Measles vaccines)
-* **Government Welfare Schemes** (e.g., PMMVY or JSY benefit rules)
-* **Other Danger Signs** (e.g., high blood pressure or severe swelling details)
+ 
