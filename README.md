@@ -6,9 +6,9 @@ An implementation of Andrej Karpathy's vision of an **LLM Wiki**: a multi-stage 
 ## 🌟 Social Sector Use Case & Scope
 This specific repository is optimized as a core knowledge engine for a **Gliffic WhatsApp Chatbot**. It provides authoritative public health awareness and  guidance to pregnant mothers and caregivers across  communities in Mumbai, India. 
 
-## 🚀 The 3-Step Compilation Process
+## 🚀 How it Works: This LLM Wiki is a textbook implemention of Karpathy's vision.. 
 
-This framework treats raw documents as uncompiled source code, processing them offline into a structured digital library optimized directly for automated answering:
+This framework treats raw documents as uncompiled source code, processing them into a structured digital library optimized directly for automated answering:
 
 ```text
 [Raw Source Files] ──> Step 1: Blueprint Planning ──> Step 2: Fact Extraction ──> Step 3: Indexing
