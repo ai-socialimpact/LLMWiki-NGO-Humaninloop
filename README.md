@@ -14,7 +14,7 @@ This specific repository is LLM Wiki  (builds on Karpathy vision of LLM Wiki,  b
 
 Illustrative example of How this LLM Wiki supports NGOs to build trust with end-users ( Scenario: How Gliffic QA bot responds to high risk pregnancy case)
 
-[Illustration of End-user Trust building in LLM Wiki Design](https://github.com/ai-socialimpact/LLMWiki-NGO-Humaninloop/blob/main/WikiContents/Human-in-loop/Readme.md) 
+[Illustration in LLM Wiki Design](https://github.com/ai-socialimpact/LLMWiki-NGO-Humaninloop/blob/main/WikiContents/Human-in-loop/Readme.md) 
 
 ## 🚀 How it Works: This LLM Wiki is a textbook implemention of Karpathy's vision.. 
 
@@ -136,7 +136,17 @@ Secures graph consistency and path connections prior to production export.
          │
          ▼
 [ Verified Runtime-Exportable Knowledge Engine Vault ]
+
+
 ```
+
+
+## 🏗️ Sample Wiki Contents  
+https://github.com/ai-socialimpact/LLMWiki-NGO-Humaninloop/tree/main/WikiContents/WikiContentVersions/WikiVer1/Contents
+
+## 🏗️ Sample Wiki QA answers 
+https://github.com/ai-socialimpact/LLMWiki-NGO-Humaninloop/tree/main/WikiContents/Outputs
+
 
 
 
