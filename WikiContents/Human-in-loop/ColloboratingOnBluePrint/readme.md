@@ -2,7 +2,7 @@
 
 Phase 1 processes your unstructured text library through a 5-pass  compilation sequence.
 
-## 🛠️ Tuning Routing Resolution: Phase 1 Topic Limits
+## 🛠️ NGO Program Owners can shape the Wiki with Human in the Loop, for ex, the no of topics
 
 An NGO Administrator can control how precisely the chatbot route answers by tuning the **Thematic Topic Count Limits** inside the Phase 1 pipeline . 
 
