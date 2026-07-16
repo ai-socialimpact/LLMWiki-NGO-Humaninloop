@@ -60,7 +60,7 @@ Refer to Automatically generated [Routing_Guidance](https://github.com/ai-social
 
 [View in Colab](https://colab.research.google.com/github/ai-socialimpact/LLMWiki-NGO-Humaninloop/blob/main/Nand_Wiki_creation_v2s.ipynb)
 
-## 🏗️ Multi-Pass Compilation Pipeline
+## 🏗️ Design of the LLM Wiki Creation System: A Multi-Pass Compilation Pipeline
 
 ```text
 [ Raw Source Files ]
