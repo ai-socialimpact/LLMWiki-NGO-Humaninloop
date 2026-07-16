@@ -2,7 +2,9 @@
 
 Phase 1 processes your unstructured text library through a 5-pass  compilation sequence.
 
-## 🛠️ NGO Program Owners can shape the Wiki with Human in the Loop, for ex, the no of topics
+## 🛠️ NGO Program Owners can shape the Wiki with Human in the Loop 
+
+###  NGO Program Owners can shape the Wiki structure (topics wise organization or trimester wise organization) and control the depth/focus by tunning the number of topics in Wiki 
 
 An NGO Administrator can control how precisely the chatbot route answers by tuning the **Thematic Topic Count Limits** inside the Phase 1 pipeline . 
 
