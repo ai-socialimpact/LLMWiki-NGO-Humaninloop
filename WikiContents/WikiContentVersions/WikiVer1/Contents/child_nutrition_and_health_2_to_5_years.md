@@ -9,9 +9,7 @@ contributing_sources: ["CHILD CARE AFTER BIRTH.md", "ANTHROPOMETRY MEASURES OF C
 [CONTEXTUAL GUARDRAIL LOCK]: THIS DOCUMENT IS VALID ONLY FOR: health, nutrition, activity, and sleep guidelines for children from their second birthday (24 months) to their fifth birthday (60 months). IT IS EXPLICITLY INVALID AND FORBIDDEN FOR USE IN CASE OF: providing information on infant care, breastfeeding, complementary feeding for children under 2 years, Kangaroo Mother Care (KMC), or care for low birth weight (LBW) infants. All data and guidelines for children under 24 months of age are strictly excluded.
 
 ## 1. Core Semantic Keywords
-<keywords_block>
 child_nutrition, preschool_health, toddler_diet, physical_activity, screen_time, sleep_guidelines, child_growth, malnutrition, child_safety, healthy_habits
-</keywords_block>
 
 ## 2. Executive Guidance & Context Layer
 ### A. Long Comprehensive Summary
