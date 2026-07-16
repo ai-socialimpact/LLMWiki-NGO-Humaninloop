@@ -6,8 +6,44 @@ An implementation of Andrej Karpathy's vision of an **LLM Wiki**: a multi-stage 
 ## 🌟 Social Sector Use Case & Scope
 This specific repository is optimized as a core knowledge engine for a **Gliffic WhatsApp Chatbot**. It provides authoritative public health awareness and  guidance to pregnant mothers and caregivers across  communities in Mumbai, India. 
 
+## 🚀 The 3-Step Compilation Process
 
-## ⚡ The Wiki creates index that is optimized for high accuracy Router Reasoning  during Gliffic QA 
+This framework treats raw documents as uncompiled source code, processing them offline into a structured digital library optimized directly for automated answering:
+
+```text
+[Raw Source Files] ──> Step 1: Blueprint Planning ──> Step 2: Fact Extraction ──> Step 3: Indexing
+```
+
+1. **Step 1: Blueprint Planning**  
+   The system maps out a comprehensive mental model of the Wiki. It looks at the unique use case, configurations for topic count limits, and outputs a concrete architectural blueprint plan.
+2. **Step 2: Fact Extraction**  
+   The compilation engine sweeps through the source documentation to isolate key facts, metrics, and data parameters. It then materializes these details directly into clean markdown files based on structural configuration templates.
+3. **Step 3: Creating the Search Index**  
+   The pipeline generates structured table-of-contents files and high-density attribute manifest maps. This index allows the query router to instantly find the absolute best file to answer a user's question with total precision.
+
+---
+
+## 👥 Human-in-the-Loop : Allows NGO to control and shape the LLM Wiki structure 
+
+
+* **Collaborative Blueprint Design:** The initial mental map and system boundaries are brainstormed and structured in active cooperation with NGO administrative managers to perfectly match community requirements.
+* **Demand-Driven Content Matching:** Human interaction logs (such as localized chatbot question logs from platforms like Gliffic) are fed into the system. The system explicitly warps and customizes folder boundaries around the exact questions humans are asking.
+* **Critical Clinical Content Review:** Specialized healthcare professionals (such as SNEHA team members) are actively assigned to manually audit and review high-risk medical pages—such as severe maternal anemia advice—ensuring absolute safety before the files are finalized.
+
+
+
+## 💎 Core Benefits of the Multi-Pass Compilation Architecture
+
+| Dynamic Feature | Impact & Business Benefit for NGOs | Technical Idea | Deep Technical Summary |
+| :--- | :--- | :--- | :--- |
+| **1. Human readable Wiki Content  - No more a AI blackbox - Auto LLM Wiki creation** | **Reorganizes input** for users by organizing messy folders into neat, ready-to-read topic guides before going live. | Inversion of synthesis | Dissects overlapping source manuals offline into mutually exclusive topic containers optimized for transformer attention weights. |
+| **2. ACCURACY - Designed for Accurate Gliffic QA bot experience** | **Guarantees near-perfect matching** of user questions to the right documents, stopping the chatbot from pulling random text chunks. | High-density manifest lookups | Replaces fuzzy vector distance calculations with structural token matching over native Markdown key-value attribute tables. |
+| **3. TRUST - Protects NGO Communtiy** | **Blocks wrong medical advice instantly** by telling the chatbot exactly what topics are strictly forbidden in each section. | Hard negative context constraints | Encodes explicit invalidation boundaries into the index to reject mismatched file paths instantly, preventing cross-contamination. |
+| **Can adapat to needs of NGO endusers question patterns** | **Shapes the library around real community needs** by tailoring folders directly to the exact questions users ask. | Demand-driven alignment | Restructures directory taxonomy scopes dynamically according to real-world user intent distribution logs. |
+| **Quality** | **Prevents broken links ** by catching mistakes automatically before the project is deployed. |   automated linting | Runs a   validation script to audit filename linkages, catch orphaned nodes, and verify Pydantic blueprint conformity. |
+
+
+## ⚡ Designed for High Accuracy Question Answering for NGOs QA bot: The Wiki creates index that is optimized for high accuracy Router Reasoning  during Gliffic QA 
 
 To protect maternal health outcomes, the Stage-1 Router skips unstable vector proximity calculations entirely, relying on direct token matches with high-density Markdown Manifest Tables:
 
