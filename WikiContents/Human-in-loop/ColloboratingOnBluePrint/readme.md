@@ -60,11 +60,11 @@ By modifying the parameters inside the **`INSTRUCTIONs`** framework, you directl
 
 ### 🧬 NGO Program directors can shape the how the topics are organized in the Wiki by providing this guidance to AI
 
+```python
 WikiTEMPLATE_Guidance = """
-CRITICAL BUSINESS USE CASE CONTEXT & THEMATIC BOUNDARY LOCKS:
-The downstream application is a conversational WhatsApp Chatbot designed to provide authoritative public health awareness and medical advice to pregnant mothers and caregivers in local urban slum communities in Mumbai in India.
-Users naturally frame questions based on specific timelines (their current trimester or their child's exact age) or critical symptoms.
-Some users frame questions asking for information about government schemes or facilities provided by govt.
+
+CRITICAL BUSINESS USE CASE CONTEXT & THEMATIC BOUNDARY LOCKS: 
+The downstream application is a conversational WhatsApp Chatbot designed to provide authoritative public health awareness and medical advice to pregnant mothers and caregivers in local urban slum communities in Mumbai in India. Users naturally frame questions based on specific timelines (their current trimester or their child's exact age) or critical symptoms. Some users frame questions asking for information about government schemes or facilities provided by govt.
 
 To maximize downstream question-answering routing utility and achieve perfect isolation for GPT-4o attention layers, you must actively organize these topic boundaries strictly into a balanced directory taxonomy of minimum 10 and maximum 25 distinct, mutually exclusive topic containers. Follow these specialized layout mandates:
 
@@ -74,13 +74,11 @@ To maximize downstream question-answering routing utility and achieve perfect is
 
 3. ACUTE CLINICAL TRIGGERS: Isolate severe danger signs or critical emergency workflows into high-density, specialized files (e.g., 'advice_for_trimester1_mothers_with_severe_anemia', 'emergency_water_chlorination_ratios') so that urgent, high-risk queries route instantly to targeted, error-free files.
 
-4. GOVERNMENT SOCIAL PROTECTION AND CASH BENEFIT SCHEMES: Isolate administrative financial aid rules into dedicated files mapping specific government social protection schemes (e.g., eligibility requirements, income/caste restrictions, required documentation checklists, delivery parameters, and step-by-step form-filing workflows).
+4. GOVERNMENT SOCIAL PROTECTION AND CASH BENEFIT SCHEMES: Isolate administrative financial aid rules into dedicated files mapping specific government social protection schemes (e.g., eligibility requirements, income/caste restrictions, required documentation checklists).
+"""
+```
 
-5. INSTITUTIONAL FACILITIES AND INFRASTRUCTURE INFRASTRUCTURE STANDARDS: Isolate guidelines pertaining to physical health infrastructure (Primary Health Centers, Sub-Centers, Anganwadi Centers) including equipment readiness checklists, operational protocols, and specific care capacities for delivery hubs.
-
-Banned Content Forms: Never create generic folder headings (like 'miscellaneous_data', 'appendix_b', or 'general_guidelines'). Every single container must represent an un-ambiguous, search-optimized destination."""
-
-
+ 
 
 ### 🧬 Sample Blueprint Target Resolution Output
 
