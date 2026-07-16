@@ -11,7 +11,7 @@ This specific repository is optimized as a core knowledge engine for a **Gliffic
 This framework treats raw documents as uncompiled source code, processing them into a structured digital library optimized directly for automated answering:
 
 ```text
-[Raw Source Files] ──> Step 1: Blueprint Planning ──> Step 2: Fact Extraction ──> Step 3: Indexing
+[Raw Source Files] ──> Step 1: Blueprint Planning ──> Step 2: Fact Extraction ──> Step 3: Indexing ──> Step 4: LLM Wiki contents !
 ```
 
 1. **Step 1: Blueprint Planning**  
