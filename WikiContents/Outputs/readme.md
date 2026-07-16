@@ -7,7 +7,6 @@
 1. [Diet Chart for 8 Months Pregnancy](#1-diet-chart-for-8-months-pregnancy)
 2. [Immediate Care for Lower Abdominal Pain](#2-immediate-care-for-lower-abdominal-pain)
 3. [Calcium & Iron Supplement Guidelines](#3-calcium--iron-supplement-guidelines)
-4. [Medical Disclaimer](#-medical-disclaimer)
 
 ---
 
