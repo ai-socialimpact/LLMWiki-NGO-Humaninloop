@@ -4,7 +4,12 @@
 An implementation of Andrej Karpathy's vision of an **LLM Wiki**: a multi-stage compilation pipeline that treats raw source materials as uncompiled code. This system pre-computes context graphs, structures strict data exclusions, and formats high-density relational text graphs to maximize the performance of downstream LLM attention weights.
 
 ## 🌟 Social Sector Use Case & Scope
-This specific repository is optimized as a core knowledge engine for a **Gliffic WhatsApp Chatbot**. It provides authoritative public health awareness and  guidance to pregnant mothers and caregivers across  communities in Mumbai, India. 
+This specific repository is LLM Wiki  (builds on Karpathy vision of LLM Wiki,  but we design it for the Social Sector needs).  
+1. Powerful Human in the loop optional controls: Enables NGO to take control on the structure of the Wiki and shape its creation (NGO program owners can guide how this AI should shape up the output contents of AI generated Wiki.)
+2. The index is optimized for effective Wiki Router for the downstream Question Answering task around **Gliffic WhatsApp Chatbot**  .
+3. Trust factor: For example, SNEHA's wiki index ensures questions from high-risk mothers are handling by with utmost care - allows routing to human vetted - hi-risk pregnancies section of LLM Wiki
+4. Human in the Loop approval : The 3 pass mechamism first creates a mental model , then takes approval for NGO program owners before creating the Wiki. If the NGO program leaders wants to shape the Wiki in a different way, they can guide and shape the mental model until they get a satisfactory blueprint
+
 
 ## 🚀 How it Works: This LLM Wiki is a textbook implemention of Karpathy's vision.. 
 
