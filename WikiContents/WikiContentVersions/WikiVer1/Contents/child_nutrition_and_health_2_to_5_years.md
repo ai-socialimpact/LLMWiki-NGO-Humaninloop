@@ -14,7 +14,6 @@ child_nutrition, preschool_health, toddler_diet, physical_activity, screen_time,
 </keywords_block>
 
 ## 2. Executive Guidance & Context Layer
-<executive_brief_block>
 ### A. Long Comprehensive Summary
 [Target:: child_health_2_5_years | Milestone:: overview | Scope:: summary] This document provides comprehensive health and nutrition guidelines for children aged 2 to 5 years. Key recommendations include ensuring children are physically active for at least 180 minutes per day and limiting sedentary screen time to a maximum of 60 minutes daily. Adequate sleep is crucial, with 11-14 hours recommended for 2-year-olds and 10-13 hours for children aged 3-5. Dietary guidance emphasizes providing a variety of foods, including meat, poultry, fish, fruits, vegetables, and eggs, while encouraging children to eat without forcing them. The guide also covers essential safety and hygiene practices, such as hand washing, maintaining a smoke-free environment, and securing the home against hazards like toxic substances and open water. Furthermore, it includes detailed WHO data on average weight and height for this age group to monitor growth, alongside definitions and risks associated with malnutrition, including stunting, wasting, overweight, and underweight conditions. Parents and caregivers are advised to monitor for danger signs like poor eating or reduced activity and to seek timely health services.
 
@@ -57,10 +56,8 @@ child_nutrition, preschool_health, toddler_diet, physical_activity, screen_time,
 [Target:: child_health_2_5_years | Milestone:: diet | Query:: popular_faq] Question: What kinds of foods should I give my preschooler?
 [Target:: child_health_2_5_years | Milestone:: diet | Query:: popular_faq] Answer: You should provide a variety of foods that require chewing as often as possible, such as meat, poultry, fish, fruit, vegetables, and eggs.
 </qa_pair>
-</executive_brief_block>
 
 ## 3. Exhaustive List of Facts
-<facts_block>
 ### Diet and Feeding (2-5 Years)
 [Target:: child_health_2_5_years | Milestone:: diet | Action:: recommendation] Give a variety of foods that need chewing as the child gets older daily, or as often as possible (such as meat, poultry, fish, fruit and vegetables or eggs). (Source: CHILD CARE AFTER BIRTH.md)
 [Target:: child_health_2_5_years | Milestone:: diet | Action:: recommendation] Encourage children to eat but do not force them. (Source: CHILD CARE AFTER BIRTH.md)
@@ -129,7 +126,6 @@ child_nutrition, preschool_health, toddler_diet, physical_activity, screen_time,
 [Target:: child_health_2_5_years | Milestone:: growth_metric_male | Action:: weight_for_length] For a male child with a height of 100 cm, the average weight is 15.1637 kg. (Source: ANTHROPOMETRY MEASURES OF CHILD KB.md)
 [Target:: child_health_2_5_years | Milestone:: growth_metric_male | Action:: weight_for_length] For a male child with a height of 105 cm, the average weight is 16.6268 kg. (Source: ANTHROPOMETRY MEASURES OF CHILD KB.md)
 [Target:: child_health_2_5_years | Milestone:: growth_metric_male | Action:: weight_for_length] For a male child with a height of 110 cm, the average weight is 18.2689 kg. (Source: ANTHROPOMETRY MEASURES OF CHILD KB.md)
-</facts_block>
 
 ## 4. Granular Frequently Asked Questions (FAQs)
 <secondary_faqs_block>
