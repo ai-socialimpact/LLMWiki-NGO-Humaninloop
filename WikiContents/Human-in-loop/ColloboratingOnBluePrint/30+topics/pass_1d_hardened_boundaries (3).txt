@@ -1,0 +1,161 @@
+AUTHORIZED REVISION: The following topic matrix has been re-architected to enforce absolute data isolation and optimize for high-precision query routing. All previous structures are superseded. Compliance is mandatory.
+
+***
+
+### **I. MATERNAL HEALTH TRACK (CHRONOLOGICAL)**
+This track contains all routine, timeline-specific maternal health information. Each container is strictly limited to its defined chronological window.
+
+**1. `preconception_health_planning`**
+*   **Display Title:** Pre-Pregnancy Health & Planning
+*   **SCOPE:** Strictly contains guidelines for women planning a pregnancy. This includes: optimal diet and folic acid supplementation pre-conception, ideal body weight, review of existing medical conditions and medications, necessary vaccinations (e.g., Rubella, Hepatitis B), and cessation of tobacco, alcohol, and substance use.
+*   **EXCLUSION RULE:** This container is forbidden from containing any information related to an active pregnancy. It must not discuss trimesters, antenatal care schedules, or delivery. All content must precede conception.
+
+**2. `antenatal_care_trimester1`**
+*   **Display Title:** Pregnancy Care: First Trimester (Weeks 1-12)
+*   **SCOPE:** Exclusively details all protocols for the first trimester. This includes: schedule of the first ANC visit, required diagnostic tests (hemoglobin, blood group, HIV, VDRL, urine), initial IFA supplementation protocol, nutritional guidance for managing nausea and ensuring foundational growth, and management of common T1 symptoms.
+*   **EXCLUSION RULE:** Forbidden from discussing T2/T3 procedures, birth planning, or postpartum care. Emergency danger signs are not detailed here; this container may only list them with a direct reference to `emergency_maternal_danger_signs`. Management of severe anemia (Hb < 7) is explicitly excluded.
+
+**3. `antenatal_care_trimester2`**
+*   **Display Title:** Pregnancy Care: Second Trimester (Weeks 13-28)
+*   **SCOPE:** Exclusively details all protocols for the second trimester. This includes: schedule for ANC visits in T2, Tetanus Toxoid (TT) injection schedule, increased caloric and protein requirements, monitoring fetal movement ("quickening"), and the protocol for the TIFFA (anomaly) scan.
+*   **EXCLUSION RULE:** Forbidden from containing information from T1 or T3. Birth preparedness and delivery planning are explicitly excluded. Details of government schemes for delivery are forbidden.
+
+**4. `antenatal_care_trimester3`**
+*   **Display Title:** Pregnancy Care: Third Trimester & Birth Preparedness (Weeks 29-40+)
+*   **SCOPE:** Exclusively details all protocols for the third trimester. This includes: increased frequency of ANC visits, final TT booster dose, counseling on signs of labor, creating a birth and emergency readiness plan (identifying facility, transport, finances), and recognizing the difference between true and false labor.
+*   **EXCLUSION RULE:** Forbidden from detailing postpartum or newborn care procedures. The mechanics of delivery itself are not described. Financial details of government schemes are excluded and must reside in their dedicated containers.
+
+**5. `postpartum_care_mother_0_6_weeks`**
+*   **Display Title:** Post-Delivery Mother Care: The First 6 Weeks
+*   **SCOPE:** Strictly contains guidelines for the mother during the puerperium (first 42 days post-delivery). This includes: monitoring for postpartum hemorrhage, infection, and eclampsia; nutritional requirements for recovery and lactation; perineal care; and the schedule for the first postpartum check-up.
+*   **EXCLUSION RULE:** Forbidden from containing newborn care information (which belongs in `newborn_care_0_28_days`). Long-term (post-6 week) maternal health, contraception, or infant care beyond 6 weeks is explicitly excluded.
+
+---
+
+### **II. PEDIATRIC HEALTH TRACK (CHRONOLOGICAL)**
+This track contains all routine, age-specific pediatric health information. Each container is strictly limited to its defined age window.
+
+**6. `newborn_care_0_28_days`**
+*   **Display Title:** Newborn Care: The First Month (0-28 Days)
+*   **SCOPE:** Exclusively details care for a neonate. This includes: immediate post-birth care (cord care, eye care), maintaining warmth, exclusive breastfeeding initiation (colostrum), monitoring urination/stools, and the at-birth vaccination schedule (BCG, OPV-0, Hep B-0).
+*   **EXCLUSION RULE:** Forbidden from discussing care for infants older than 28 days. Emergency danger signs are not detailed here, only listed with a reference to `emergency_newborn_danger_signs`. Low Birth Weight protocols are excluded.
+
+**7. `infant_care_1_6_months`**
+*   **Display Title:** Infant Care: 1 to 6 Months
+*   **SCOPE:** Strictly contains guidelines for infants aged 1-6 months. This includes: exclusive breastfeeding reinforcement, immunization schedule for 6, 10, and 14 weeks (Pentavalent, Rota, PCV, fIPV), monitoring developmental milestones (head control, social smile), and safe sleep practices.
+*   **EXCLUSION RULE:** Forbidden from containing any information on complementary feeding (solid foods). Care for newborns (<1 month) or older infants (>6 months) is explicitly excluded.
+
+**8. `infant_care_6_12_months`**
+*   **Display Title:** Infant Care: 6 to 12 Months
+*   **SCOPE:** Exclusively details care for infants aged 6-12 months. This includes: the introduction of complementary foods (timing, texture, frequency) alongside continued breastfeeding, immunization schedule for 9 months (MMR-1, Vitamin A), monitoring developmental milestones (sitting, crawling), and oral health basics.
+*   **EXCLUSION RULE:** Forbidden from discussing exclusive breastfeeding. Detailed recipes or advanced feeding principles are excluded (see `complementary_feeding_principles`). Care for toddlers (>1 year) is forbidden.
+
+**9. `toddler_care_1_2_years`**
+*   **Display Title:** Toddler Care: 1 to 2 Years (12-24 Months)
+*   **SCOPE:** Strictly contains guidelines for toddlers aged 12-24 months. This includes: transitioning to family foods, immunization schedule (DPT/OPV boosters, MMR-2), monitoring developmental milestones (walking, first words), and strategies for managing toddler behavior and ensuring home safety.
+*   **EXCLUSION RULE:** Forbidden from discussing infant or newborn care. Guidelines for children over 2 years of age are explicitly excluded. The introduction of complementary feeding is not detailed here.
+
+**10. `child_care_2_5_years`**
+*   **Display Title:** Child Care: 2 to 5 Years
+*   **SCOPE:** Exclusively details care for preschool-aged children. This includes: ensuring a balanced diet, deworming schedules, monitoring growth against standard charts, toilet training, and promoting pre-school readiness and social skills.
+*   **EXCLUSION RULE:** Forbidden from containing information on infant/toddler care or immunizations typically given before age 2. Emergency danger signs are listed but not detailed (see `emergency_child_danger_signs_under5`).
+
+---
+
+### **III. ACUTE CLINICAL TRIGGERS & HIGH-RISK PROTOCOLS**
+This section isolates high-stakes, emergency, and special-case protocols for immediate, error-free retrieval.
+
+**11. `emergency_maternal_danger_signs`**
+*   **Display Title:** EMERGENCY: Pregnancy & Postpartum Danger Signs
+*   **SCOPE:** A high-density checklist of critical maternal danger signs requiring immediate facility visit. Contains: severe headache/blurry vision, convulsions, high fever, severe abdominal pain, vaginal bleeding, and foul-smelling discharge. Each sign includes the explicit instruction: "GO TO THE NEAREST HOSPITAL IMMEDIATELY."
+*   **EXCLUSION RULE:** Forbidden from containing routine care information, symptom management for non-emergencies, or facility contact details (which belong in the directory).
+
+**12. `emergency_severe_anemia_protocol`**
+*   **Display Title:** EMERGENCY: Severe Anemia in Pregnancy (HB < 7)
+*   **SCOPE:** Strictly contains the emergency protocol for pregnant women with a hemoglobin level below 7 g/dL. This includes the immediate need for referral for blood transfusion, risks to mother and fetus, and facility-level management expectations.
+*   **EXCLUSION RULE:** Forbidden from discussing mild or moderate anemia, IFA supplementation, or diet-based management. This is an emergency protocol only.
+
+**13. `emergency_newborn_danger_signs`**
+*   **Display Title:** EMERGENCY: Newborn Danger Signs (0-28 Days)
+*   **SCOPE:** A high-density checklist of critical newborn danger signs. Contains: inability to feed, convulsions, fast breathing (>60/min), severe chest in-drawing, high/low body temperature, and lethargy. Each sign includes the explicit instruction: "GO TO THE NEAREST HOSPITAL IMMEDIATELY."
+*   **EXCLUSION RULE:** Forbidden from containing routine newborn care, feeding advice, or vaccination schedules.
+
+**14. `emergency_child_danger_signs_under5`**
+*   **Display Title:** EMERGENCY: Danger Signs in Children Under 5
+*   **SCOPE:** A high-density checklist of critical danger signs for infants and children (1 month to 5 years). Contains: inability to drink/breastfeed, vomiting everything, convulsions, lethargy/unconsciousness, and stridor. Each sign includes the explicit instruction: "GO TO THE NEAREST HOSPITAL IMMEDIATELY."
+*   **EXCLUSION RULE:** Forbidden from containing routine care, nutrition, or management of common, non-emergency illnesses like a simple cold or mild diarrhea.
+
+**15. `protocol_low_birth_weight_infant`**
+*   **Display Title:** Special Care for Low Birth Weight (LBW) Babies
+*   **SCOPE:** Exclusively details the specialized care protocol for infants born weighing less than 2.5 kg. This includes: extra thermal care, prevention of infection, specific feeding support (frequency, volume), and enhanced growth monitoring.
+*   **EXCLUSION RULE:** Forbidden from containing care guidelines for normal-weight babies. The specific technique of Kangaroo Mother Care is excluded and resides in its own container.
+
+**16. `protocol_kangaroo_mother_care`**
+*   **Display Title:** Kangaroo Mother Care (KMC) Protocol
+*   **SCOPE:** Strictly contains the step-by-step protocol for implementing Kangaroo Mother Care for stable LBW infants. This includes: eligibility criteria, positioning technique (skin-to-skin), duration, and benefits for thermal regulation, breastfeeding, and bonding.
+*   **EXCLUSION RULE:** Forbidden from discussing general LBW care, feeding formulas, or care for non-LBW infants.
+
+---
+
+### **IV. THEMATIC PROTOCOLS & GUIDELINES**
+This section contains standalone, thematic guides that serve as comprehensive references for specific health topics.
+
+**17. `breastfeeding_technique_and_challenges`**
+*   **Display Title:** Breastfeeding: Latching, Positions & Common Issues
+*   **SCOPE:** A focused technical guide on the mechanics of breastfeeding. Contains: detailed descriptions of correct attachment and positioning, how to ensure milk transfer, and troubleshooting common problems like sore nipples, engorgement, and perceived low milk supply.
+*   **EXCLUSION RULE:** Forbidden from containing timeline-specific advice (e.g., "breastfeed exclusively for 6 months," which belongs in the chronological tracks). Does not contain information on complementary feeding.
+
+**18. `complementary_feeding_principles_6_24m`**
+*   **Display Title:** Guide to Introducing Solid Foods (6-24 Months)
+*   **SCOPE:** A comprehensive reference on the principles of complementary feeding. Details the "what, when, and how" of introducing solids: food groups, texture progression by age, meal frequency and quantity, and responsive feeding techniques.
+*   **EXCLUSION RULE:** Forbidden from containing general infant care advice or immunization schedules. The specific prompt to *begin* complementary feeding at 6 months resides in `infant_care_6_12_months`.
+
+**19. `immunization_schedule_master`**
+*   **Display Title:** Complete Vaccination Schedule (Birth to 16 Years)
+*   **SCOPE:** The master, consolidated immunization schedule as per the National Immunization Schedule (NIS), India. Presented as a single, authoritative chart detailing vaccine, disease prevented, and administration age/dose.
+*   **EXCLUSION RULE:** Forbidden from containing FAQs, catch-up schedule logic, or details about vaccine side effects. It is a schedule reference ONLY.
+
+**20. `immunization_faqs_catchup`**
+*   **Display Title:** Vaccination FAQs & Catch-Up Schedules
+*   **SCOPE:** Exclusively contains answers to frequently asked questions about vaccines (e.g., managing mild fever post-vaccination) and the official logic/rules for "catch-up" schedules for children who have missed doses.
+*   **EXCLUSION RULE:** Forbidden from containing the primary immunization schedule itself. This container is for exceptions and queries ONLY.
+
+**21. `child_growth_monitoring_protocol`**
+*   **Display Title:** Child Growth Charts & Malnutrition Guide
+*   **SCOPE:** Details the protocol for monitoring child growth. Contains: how to read WHO growth charts (weight-for-age, height-for-age, weight-for-height), definitions of Moderate Acute Malnutrition (MAM) and Severe Acute Malnutrition (SAM), and the criteria for referral.
+*   **EXCLUSION RULE:** Forbidden from containing dietary advice for normally growing children. This is a monitoring and diagnostic tool ONLY.
+
+**22. `hygiene_and_sanitation_home`**
+*   **Display Title:** Hygiene and Safety Protocols for the Home
+*   **SCOPE:** A thematic guide on creating a safe and hygienic environment for a child. Contains: handwashing technique, safe water storage and treatment, food safety, and preventing common household accidents (burns, falls, poisoning).
+*   **EXCLUSION RULE:** Forbidden from containing personal hygiene instructions tied to a specific age (e.g., cord care, which is in `newborn_care_0_28_days`).
+
+---
+
+### **V. GOVERNMENT SCHEMES & HEALTH INFRASTRUCTURE**
+This section isolates all information related to administrative schemes, benefits, and physical health facilities.
+
+**23. `scheme_pmmvy_guide`**
+*   **Display Title:** Government Scheme: Pradhan Mantri Matru Vandana Yojana (PMMVY)
+*   **SCOPE:** Exclusively details the PMMVY cash benefit scheme. Contains: eligibility criteria, the three-installment cash transfer structure (amount and timing), required documentation (Aadhaar, bank account), and the step-by-step application process.
+*   **EXCLUSION RULE:** Forbidden from containing medical advice or details of any other government scheme.
+
+**24. `scheme_jsy_guide`**
+*   **Display Title:** Government Scheme: Janani Suraksha Yojana (JSY)
+*   **SCOPE:** Exclusively details the JSY scheme to promote institutional delivery. Contains: eligibility criteria, cash assistance amounts for rural/urban and home/institutional delivery, role of the ASHA worker, and the process for receiving payment.
+*   **EXCLUSION RULE:** Forbidden from containing medical advice or details of any other government scheme.
+
+**25. `scheme_jssk_guide`**
+*   **Display Title:** Government Scheme: Janani Shishu Suraksha Karyakram (JSSK)
+*   **SCOPE:** Exclusively details the JSSK scheme for free services. Contains: a list of entitlements (free delivery, C-section, drugs, diet, blood, transport) for mothers and sick newborns (up to 30 days), and how to access these entitlements at public health facilities.
+*   **EXCLUSION RULE:** Forbidden from containing cash benefit information (which belongs in JSY/PMMVY) or medical protocols. This is a guide to service entitlements ONLY.
+
+**26. `directory_mumbai_health_facilities`**
+*   **Display Title:** Directory of Mumbai Public Health Facilities
+*   **SCOPE:** A structured directory of public health facilities in Mumbai. Contains: names, addresses, and contact information for Municipal Hospitals, Maternity Homes, and Health Posts, organized by ward.
+*   **EXCLUSION RULE:** Forbidden from containing service schedules, medical advice, or details of government schemes. It is a directory ONLY.
+
+**27. `protocol_health_post_services`**
+*   **Display Title:** Health Post Service Schedules & Offerings
+*   **SCOPE:** Details the specific services and operational schedules of a typical urban Health Post. Contains: days and times for ANC clinics, immunization sessions, and family planning services. Lists the standard equipment and staff roles at a Health Post.
+*   **EXCLUSION RULE:** Forbidden from containing a directory of all facilities (see `directory_mumbai_health_facilities`) or detailed medical protocols. This container describes the *function* of a Health Post.
