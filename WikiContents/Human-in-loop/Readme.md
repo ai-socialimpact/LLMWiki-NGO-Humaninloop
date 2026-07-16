@@ -37,7 +37,7 @@ The routing engine scans for explicit high-alert clinical triggers. Below is an 
 ```
 
 
-Refer to the complete [Index Stage Routing Protocol Documentation](https://github.com/ai-socialimpact/LLMWiki-NGO-Humaninloop/blob/main/WikiContents/index_stage_routing_protocol.md).
+Refer to the Auto-generated routing mechansism that protects the lives of community  [Index Stage Routing Protocol Documentation](https://github.com/ai-socialimpact/LLMWiki-NGO-Humaninloop/blob/main/WikiContents/index_stage_routing_protocol.md).
 
 ---
 
