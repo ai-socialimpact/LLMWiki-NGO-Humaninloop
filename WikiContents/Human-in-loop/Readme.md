@@ -65,11 +65,24 @@ This core logic is automatically compiled by the LLM Wiki engine to cleanly map 
 
 ---
 
-### 🚀 Future-Proof Design & Accuracy Tuning
+### 🚀 Future-Proof Design & Accuracy Tuning : Human in the Loop control over the Wiki Structure 
 
 The system scales effortlessly to fit any NGO's specific documentation structure. 
 
 By adjusting your configuration's **Minimum/Maximum Topic Count**, you control how granularly the AI splits files during offline compilation. This directly tunes routing resolution, letting the system effortlessly differentiate between a general query and an acute health condition:
+
+### 🚀 Human in the Loop control over the how to organize 
+
+After users configure the WikiGuidance , NGO program owners can also optinally suggest number of topics (max,min) in the Wiki.  
+
+**Thinking of Future** This number can be later on auto-adjusted by an iterative agent for iterative - auto - optimize loop based refinement of Wiki
+
+
+
+
+
+
+
 
 * Low-Risk File Match: `nutritional_interventions_for_trimester1_mothers`
 * High-Risk Clinical Match: `advice_for_trimester1_mothers_with_severe_anemia`
