@@ -33,7 +33,7 @@ By modifying the parameters inside the **`INSTRUCTIONs`** framework, you directl
 
 
 ```text
-[Raw Sources + Use Case Guidance]
+[Raw Files + NGO Program Director Guidance]
                │
                ▼
 ┌────────────────────────────────────────────────────────┐
@@ -58,6 +58,27 @@ By modifying the parameters inside the **`INSTRUCTIONs`** framework, you directl
 ---
 
 
+### 🧬 NGO Program directors can shape the how the topics are organized in the Wiki by providing this guidance to AI
+
+WikiTEMPLATE_Guidance = """
+CRITICAL BUSINESS USE CASE CONTEXT & THEMATIC BOUNDARY LOCKS:
+The downstream application is a conversational WhatsApp Chatbot designed to provide authoritative public health awareness and medical advice to pregnant mothers and caregivers in local urban slum communities in Mumbai in India.
+Users naturally frame questions based on specific timelines (their current trimester or their child's exact age) or critical symptoms.
+Some users frame questions asking for information about government schemes or facilities provided by govt.
+
+To maximize downstream question-answering routing utility and achieve perfect isolation for GPT-4o attention layers, you must actively organize these topic boundaries strictly into a balanced directory taxonomy of minimum 10 and maximum 25 distinct, mutually exclusive topic containers. Follow these specialized layout mandates:
+
+1. CHRONOLOGICAL MATERNAL TRACKING: Group nutritional interventions, diagnostic schedules, and routine field advice explicitly by milestone windows (e.g., 'nutritional_interventions_for_trimester1_mothers', 'screening_protocols_for_trimester3_mothers').
+
+2. PEDIATRIC DEVELOPMENT HORIZONS: Categorize infant care, complementary feeding rules, and monitoring timelines by age boundaries (e.g., 'nutritional_interventions_for_children_below_6months', 'immunization_schedules_6_to_12_months').
+
+3. ACUTE CLINICAL TRIGGERS: Isolate severe danger signs or critical emergency workflows into high-density, specialized files (e.g., 'advice_for_trimester1_mothers_with_severe_anemia', 'emergency_water_chlorination_ratios') so that urgent, high-risk queries route instantly to targeted, error-free files.
+
+4. GOVERNMENT SOCIAL PROTECTION AND CASH BENEFIT SCHEMES: Isolate administrative financial aid rules into dedicated files mapping specific government social protection schemes (e.g., eligibility requirements, income/caste restrictions, required documentation checklists, delivery parameters, and step-by-step form-filing workflows).
+
+5. INSTITUTIONAL FACILITIES AND INFRASTRUCTURE INFRASTRUCTURE STANDARDS: Isolate guidelines pertaining to physical health infrastructure (Primary Health Centers, Sub-Centers, Anganwadi Centers) including equipment readiness checklists, operational protocols, and specific care capacities for delivery hubs.
+
+Banned Content Forms: Never create generic folder headings (like 'miscellaneous_data', 'appendix_b', or 'general_guidelines'). Every single container must represent an un-ambiguous, search-optimized destination."""
 
 
 
