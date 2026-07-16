@@ -54,8 +54,10 @@ Refer to Automatically generated [Routing_Guidance](https://github.com/ai-social
 3.  **STAGE 2 (Inclusion Shortlisting):** Uses `SECTION_2_INCLUSION_KEYWORDS` to shortlist candidate filenames matching core clinical intentions.
 4.  **STAGE 3 (Filtering / Hard Negatives):** References `SECTION_3_EXCLUSIONS`. If an invalid milestone parameter matches an exclusion bound, the path is instantly canceled to eliminate false-positive medical contamination.
 
-## Source
+## Source Code
+
 [Github notebook](https://github.com/ai-socialimpact/LLMWiki-NGO-Humaninloop/blob/main/Nand_Wiki_creation_v2s.ipynb)
+
 [View in Colab](https://colab.research.google.com/github/ai-socialimpact/LLMWiki-NGO-Humaninloop/blob/main/Nand_Wiki_creation_v2s.ipynb)
 
 ## 🏗️ Multi-Pass Compilation Pipeline
