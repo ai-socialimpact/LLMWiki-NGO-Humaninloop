@@ -39,6 +39,10 @@ The routing engine scans for explicit high-alert clinical triggers. Below is an 
 
 Refer to the Auto-generated routing mechansism that protects the lives of community  [Index Stage Routing Protocol Documentation](https://github.com/ai-socialimpact/LLMWiki-NGO-Humaninloop/blob/main/WikiContents/index_stage_routing_protocol.md).
 
+Based on the above routing based reasoning, explore how the Wiki QA system has reasoned and handled questions on hi-risk mothers diligently by clearing identifing and routing to seperate LLM Wiki. 
+Note all this all automatically enabled as this is based on the above auto-generated routing index, which directly serves as the basis of multi-step reasoning routing protocol. 
+To illustrate, here is examples of how the system handled this. [SampleOutput](https://github.com/ai-socialimpact/LLMWiki-NGO-Humaninloop/blob/main/WikiContents/Outputs/readme.md)
+
 ---
 
 ### ⚡ The 4-Stage Routing Protocol
