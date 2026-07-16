@@ -11,7 +11,9 @@ This specific repository is LLM Wiki  (builds on Karpathy vision of LLM Wiki,  b
 4. Human in the Loop approval : The 3 pass mechamism first creates a mental model , then takes approval for NGO program owners before creating the Wiki. If the NGO program leaders wants to shape the Wiki in a different way, they can guide and shape the mental model until they get a satisfactory blueprint
 
 ## 🌟**What is Special: Building Trust with the NGO Communtiy ? How this design protects NGO community **
+
 Illustrative example of How this LLM Wiki supports NGOs to build trust with end-users ( Scenario: How Gliffic QA bot responds to high risk pregnancy case)
+
 [Illustration of End-user Trust building in LLM Wiki Design](https://github.com/ai-socialimpact/LLMWiki-NGO-Humaninloop/blob/main/WikiContents/Human-in-loop/Readme.md) 
 
 ## 🚀 How it Works: This LLM Wiki is a textbook implemention of Karpathy's vision.. 
