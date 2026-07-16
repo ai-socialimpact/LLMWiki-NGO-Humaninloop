@@ -1,4 +1,4 @@
-# LLMWiki-NGO-Humaninloop
+# LLM Wiki for Social Sector : Designing the engine for establishing Trust & Accuracy in Gliffic QA bot among NGO Community  
 
 
 An implementation of Andrej Karpathy's vision of an **LLM Wiki**: a multi-stage compilation pipeline that treats raw source materials as uncompiled code. This system pre-computes context graphs, structures strict data exclusions, and formats high-density relational text graphs to maximize the performance of downstream LLM attention weights.
