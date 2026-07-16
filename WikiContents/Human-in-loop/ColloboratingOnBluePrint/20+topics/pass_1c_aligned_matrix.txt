@@ -1,0 +1,104 @@
+/maternal_care_pre_conception/
+TITLE: Pre-Conception Health & Readiness
+TIMELINE: Pre-Pregnancy
+DESCRIPTION: Contains all information for women planning a pregnancy, including nutritional readiness, ideal age, BMI targets, and essential pre-conception supplementation like folic acid.
+
+/maternal_care_trimester_1/
+TITLE: Pregnancy Care: First Trimester (Weeks 1-12)
+TIMELINE: Pregnancy Weeks 1-12
+DESCRIPTION: Covers early pregnancy milestones, including pregnancy registration, the first antenatal check-up (ANC), initial tests, nutritional requirements, and Tetanus-Diphtheria (TD) vaccination.
+
+/maternal_care_trimester_2/
+TITLE: Pregnancy Care: Second Trimester (Weeks 13-28)
+TIMELINE: Pregnancy Weeks 13-28
+DESCRIPTION: Details mid-pregnancy care, including the second ANC, initiation of Iron-Folic Acid (IFA) and calcium supplements, deworming protocols, and fetal anomaly scans.
+
+/maternal_care_trimester_3_and_birth_prep/
+TITLE: Pregnancy Care: Third Trimester & Birth Prep (Weeks 29+)
+TIMELINE: Pregnancy Weeks 29-40+
+DESCRIPTION: Focuses on late-stage pregnancy care, including third and fourth ANCs, birth preparedness planning, delivery bag essentials, recognizing labor signs, and emergency contact information.
+
+/maternal_postpartum_care_and_nutrition/
+TITLE: Post-Delivery Care & Nutrition for Mothers
+TIMELINE: Postpartum (First 6 months after delivery)
+DESCRIPTION: Dedicated to the mother's health after childbirth, covering nutritional needs for lactation, continuation of IFA supplements, physical recovery, and mental well-being.
+
+/maternal_anemia_diagnosis_and_treatment/
+TITLE: Anemia in Pregnancy: Diagnosis & Treatment
+TIMELINE: Pregnancy & Postpartum
+DESCRIPTION: An isolated, high-density node for managing maternal anemia. Contains diagnostic criteria (Hb levels), severity-based treatment protocols (prophylactic vs. therapeutic IFA), and guidelines for advanced interventions like iron sucrose injections.
+
+/maternal_danger_signs_and_emergencies/
+TITLE: Emergency Danger Signs in Pregnancy
+TIMELINE: Pregnancy
+DESCRIPTION: A critical alert node containing a checklist of severe symptoms (e.g., bleeding, severe headaches, swelling) that require immediate medical attention during pregnancy.
+
+/newborn_immediate_and_postnatal_care/
+TITLE: Newborn Care: Birth to 28 Days
+TIMELINE: Birth to 28 Days
+DESCRIPTION: Covers all essential care for a newborn in the first month, including immediate actions at birth, umbilical cord care, thermal regulation, initial vaccinations (BCG, OPV-0, Hep B), and routine health screenings.
+
+/child_danger_signs_and_emergencies/
+TITLE: Emergency Danger Signs in Infants & Children
+TIMELINE: 0-5 Years
+DESCRIPTION: A critical alert node for caregivers, detailing urgent symptoms in infants and young children (e.g., not feeding, high fever, fast breathing, lethargy) that necessitate immediate healthcare consultation.
+
+/low_birth_weight_and_preterm_infant_care/
+TITLE: Care for Low Birth Weight & Preterm Infants
+TIMELINE: Infancy
+DESCRIPTION: A specialized node for the care of vulnerable infants. Includes detailed guidelines on Kangaroo Mother Care (KMC), specific feeding techniques, and distinct growth monitoring protocols.
+
+/breastfeeding_essentials_and_troubleshooting/
+TITLE: Breastfeeding: Techniques & Problem Solving
+TIMELINE: 0-2+ Years
+DESCRIPTION: A comprehensive guide to breastfeeding, covering benefits, proper latching, feeding positions, signs of adequacy, expressing milk, and managing common issues like sore nipples or feeding during maternal illness (e.g., TB, fever).
+
+/infant_nutrition_exclusive_breastfeeding_0_to_6_months/
+TITLE: Infant Nutrition: Exclusive Breastfeeding (0-6 Months)
+TIMELINE: 0-6 Months
+DESCRIPTION: Strictly focuses on the WHO recommendation of exclusive breastfeeding for the first six months, explaining its benefits and addressing common questions about this period.
+
+/child_nutrition_complementary_feeding_6_to_24_months/
+TITLE: Child Nutrition: Introducing Solid Foods (6-24 Months)
+TIMELINE: 6-24 Months
+DESCRIPTION: Details the critical transition to solid foods. Includes guidance on when to start, what foods to introduce, food consistency and frequency, responsive feeding techniques, and dietary diversity.
+
+/child_nutrition_and_health_2_to_5_years/
+TITLE: Child Health & Nutrition (2-5 Years)
+TIMELINE: 2-5 Years
+DESCRIPTION: Addresses the health and development needs of toddlers and young children, including dietary guidelines, recommended physical activity, screen time limits, and sleep requirements.
+
+/immunization_schedule_and_faqs/
+TITLE: Vaccination Schedule & Information
+TIMELINE: Pregnancy & 0-16 Years
+DESCRIPTION: A dedicated resource for the National Immunization Schedule (NIS), including timelines for all vaccines for pregnant women, infants, and children, as well as FAQs on side effects, contraindications, and catch-up schedules.
+
+/child_growth_monitoring_and_malnutrition/
+TITLE: Child Growth Monitoring & Malnutrition
+TIMELINE: 0-5 Years
+DESCRIPTION: A reference data node containing WHO standard anthropometry charts (weight-for-age, height-for-age, etc.) and clear definitions of malnutrition indicators like stunting, wasting, and underweight.
+
+/home_environment_safety_and_hygiene/
+TITLE: Home Safety & Hygiene Practices
+TIMELINE: General
+DESCRIPTION: Provides essential guidelines for maintaining a safe and healthy home environment, covering handwashing, safe water and food handling, preventing accidents, and creating a smoke-free space.
+
+/govt_scheme_pradhan_mantri_matru_vandana_yojana_pmmvy/
+TITLE: Government Scheme: PMMVY
+TIMELINE: Administrative
+DESCRIPTION: An isolated node detailing the Pradhan Mantri Matru Vandana Yojana, including objectives, cash benefit structure, eligibility criteria, required documentation, and the application process.
+
+/govt_scheme_janani_suraksha_yojana_jsy/
+TITLE: Government Scheme: JSY
+TIMELINE: Administrative
+DESCRIPTION: An isolated node detailing the Janani Suraksha Yojana, focusing on its cash assistance for institutional delivery, benefit amounts in Maharashtra, eligibility, and required documents.
+
+/govt_scheme_janani_shishu_suraksha_karyakram_jssk/
+TITLE: Government Scheme: JSSK
+TIMELINE: Administrative
+DESCRIPTION: An isolated node detailing the Janani Shishu Suraksha Karyakram, outlining the entitlements to free services for mothers and infants, including transport, medicines, diagnostics, and food.
+
+/local_health_services_and_schedules_mumbai/
+TITLE: Local Health Centers & Schedules (Mumbai)
+TIMELINE: Institutional
+DESCRIPTION: A practical, location-specific guide to the public health infrastructure in Mumbai and surrounding areas. Includes lists of MCGM hospitals, maternity homes, and health posts, along with their specific service schedules (e.g., ANC clinic days, immunization times).

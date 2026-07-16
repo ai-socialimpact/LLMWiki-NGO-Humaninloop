@@ -1,0 +1,421 @@
+{
+    "global_reasoning": "The process involved a systematic, multi-pass analysis to map the raw source files to the predefined topic taxonomy. 1. Initial Pass - Keyword Matching: Each raw file was scanned for high-level keywords corresponding to the topic slugs (e.g., 'PMMVY', 'breastfeeding', 'anemia', 'immunization'). This created a preliminary, coarse-grained mapping. 2. Second Pass - Scope & Exclusion Analysis: Each topic's scope_definition and exclusion_rules were treated as strict filters. The content of the preliminarily mapped files was meticulously reviewed against these rules. For example, `PNC nutrition and anemia.md` contains information on both prophylactic IFA (for Trimester 2) and therapeutic treatment (for the dedicated anemia topic). The file was therefore assigned to both topics, as its content serves both scopes without violating exclusion rules. Similarly, broad files like `CHILD CARE AFTER BIRTH.md` were dissected and mapped to multiple pediatric and safety topics (e.g., newborn care, danger signs, home hygiene, complementary feeding) based on their specific sections. 3. Consolidation & Cross-Reference: General knowledge base files, such as `Essential Nutrients for A Pregnant Woman.md`, were mapped to all relevant chronological maternal care topics (pre-conception through postpartum) as they provide foundational nutritional context that supports the specific actions in each phase. Files with overlapping content, like `Health Post service.md` and `Health Info Eng.md`, were both mapped to the relevant topic to ensure complete data capture. 4. Keyword Extraction: For each finalized topic group, a set of concise, lowercase, underscore-separated keywords was extracted to represent the core concepts within that topic's strict boundaries, creating a clean tagging system for downstream processes. This layered approach ensures that each topic container is populated with precisely the right information from the source files, respecting the mutually exclusive boundaries defined in the taxonomy and creating a logical, demand-driven information architecture.",
+    "permitted_topics": [
+        {
+            "topic_slug": "maternal_care_pre_conception",
+            "display_name": "Maternal Care: Pre-Conception",
+            "scope_definition": "This container exclusively holds all guidelines for women planning a pregnancy, prior to conception. It specifies nutritional requirements for readiness (including ideal BMI and weight targets), mandatory pre-conception folic acid supplementation protocols, and lifestyle modifications.",
+            "exclusion_rules": "This container strictly prohibits any information related to confirmed pregnancy. All content regarding pregnancy registration, antenatal check-ups (ANCs), trimester-specific care, or delivery is forbidden.",
+            "contributing_raw_files": [
+                "PNC nutrition and anemia.md",
+                "Essential Nutrients for A Pregnant Woman.md",
+                "Anaemia in Pregnancy chat bot.md"
+            ],
+            "target_seed_keywords": [
+                "pre_conception",
+                "pregnancy_planning",
+                "folic_acid",
+                "maternal_nutrition",
+                "bmi"
+            ]
+        },
+        {
+            "topic_slug": "maternal_care_trimester_1",
+            "display_name": "Maternal Care: Trimester 1",
+            "scope_definition": "This container exclusively holds all protocols for pregnant women from confirmation of pregnancy through week 12. It specifies the schedule and procedures for pregnancy registration and the first ANC, initial diagnostic tests (blood group, Hb, urine), nutritional plans for early pregnancy, and the Tetanus-Diphtheria (TD-1) vaccination schedule.",
+            "exclusion_rules": "This container strictly prohibits information pertaining to Trimester 2 or 3. The initiation of Iron-Folic Acid (IFA) and calcium supplements, fetal anomaly scans, and birth preparedness planning are explicitly forbidden. Detailed anemia treatment protocols are also excluded.",
+            "contributing_raw_files": [
+                "Ante natal care document.md",
+                "Essential Nutrients for A Pregnant Woman.md",
+                "PNC nutrition and anemia.md",
+                "Anaemia in Pregnancy chat bot.md",
+                "IMMUNISATION QUESTIONS FOR CHATBOT.md",
+                "Pradhan Mantri Matru Vandana Yojana.md",
+                "Government Schemes in Maternal Child Health.md"
+            ],
+            "target_seed_keywords": [
+                "trimester_1",
+                "first_trimester",
+                "antenatal_care",
+                "anc",
+                "pregnancy_registration",
+                "td_vaccine"
+            ]
+        },
+        {
+            "topic_slug": "maternal_care_trimester_2",
+            "display_name": "Maternal Care: Trimester 2",
+            "scope_definition": "This container exclusively holds all protocols for pregnant women from week 13 through week 28. It specifies the schedule for the second ANC, the mandatory initiation of prophylactic Iron-Folic Acid (IFA) and calcium supplements, national deworming protocols (Albendazole), and the timing and purpose of the fetal anomaly scan.",
+            "exclusion_rules": "This container strictly prohibits information pertaining to Trimester 1 or 3. Details of the first ANC, birth preparedness, and signs of labor are explicitly forbidden.",
+            "contributing_raw_files": [
+                "Ante natal care document.md",
+                "PNC nutrition and anemia.md",
+                "Anaemia in Pregnancy chat bot.md",
+                "Essential Nutrients for A Pregnant Woman.md",
+                "Government Schemes in Maternal Child Health.md"
+            ],
+            "target_seed_keywords": [
+                "trimester_2",
+                "second_trimester",
+                "antenatal_care",
+                "anc",
+                "ifa_supplementation",
+                "calcium",
+                "deworming",
+                "anomaly_scan"
+            ]
+        },
+        {
+            "topic_slug": "maternal_care_trimester_3_and_birth_prep",
+            "display_name": "Maternal Care: Trimester 3 and Birth Prep",
+            "scope_definition": "This container exclusively holds all protocols for pregnant women from week 29 until delivery. It specifies the schedule for the third and fourth ANCs, comprehensive birth preparedness and complication readiness (BPCR) planning, checklists for delivery bag essentials, definitive signs of labor, and emergency contact protocols.",
+            "exclusion_rules": "This container strictly prohibits information on postpartum care or newborn care. All content related to lactation, newborn vaccination, or the mother's post-delivery recovery is forbidden.",
+            "contributing_raw_files": [
+                "Ante natal care document.md",
+                "Essential Nutrients for A Pregnant Woman.md",
+                "PNC nutrition and anemia.md",
+                "Government Schemes in Maternal Child Health.md",
+                "Janani Suraksha Yojana.md"
+            ],
+            "target_seed_keywords": [
+                "trimester_3",
+                "third_trimester",
+                "birth_preparedness",
+                "delivery_plan",
+                "labor_signs",
+                "complication_readiness"
+            ]
+        },
+        {
+            "topic_slug": "maternal_postpartum_care_and_nutrition",
+            "display_name": "Maternal Postpartum Care and Nutrition",
+            "scope_definition": "This container is exclusively dedicated to the mother's health for the first 6 months after delivery. It specifies postpartum nutritional requirements for recovery and lactation, the protocol for continuation of IFA and calcium supplements, guidelines for physical recovery, and indicators for postpartum mental well-being screening.",
+            "exclusion_rules": "This container strictly prohibits all information related to newborn or infant care. Details of breastfeeding techniques, infant feeding, or infant health are explicitly forbidden and belong in their respective pediatric nodes.",
+            "contributing_raw_files": [
+                "PNC nutrition and anemia.md",
+                "Anaemia in Pregnancy chat bot.md",
+                "Essential Nutrients for A Pregnant Woman.md",
+                "Breastfeeding knowledge base.md"
+            ],
+            "target_seed_keywords": [
+                "postpartum_care",
+                "postnatal_care",
+                "maternal_nutrition",
+                "lactation",
+                "postpartum_recovery",
+                "ifa"
+            ]
+        },
+        {
+            "topic_slug": "newborn_immediate_and_postnatal_care",
+            "display_name": "Newborn: Immediate and Postnatal Care",
+            "scope_definition": "This container exclusively holds all essential care protocols for a newborn from birth to 28 days. It specifies immediate actions at birth (drying, cord clamping), thermal regulation, umbilical cord care, and the schedule for initial vaccinations (BCG, OPV-0, Hepatitis B-0).",
+            "exclusion_rules": "This container strictly prohibits information on the mother's postpartum health. It also forbids details on long-term infant feeding beyond establishing initial breastfeeding and any immunization scheduled after 28 days.",
+            "contributing_raw_files": [
+                "CHILD CARE AFTER BIRTH.md",
+                "IMMUNISATION QUESTIONS FOR CHATBOT.md",
+                "Breastfeeding knowledge base.md",
+                "Pradhan Mantri Matru Vandana Yojana.md",
+                "Government Schemes in Maternal Child Health.md"
+            ],
+            "target_seed_keywords": [
+                "newborn_care",
+                "postnatal_care",
+                "cord_care",
+                "thermal_regulation",
+                "newborn_vaccination",
+                "bcg",
+                "opv_0"
+            ]
+        },
+        {
+            "topic_slug": "infant_nutrition_exclusive_breastfeeding_0_to_6_months",
+            "display_name": "Infant Nutrition: Exclusive Breastfeeding (0-6 Months)",
+            "scope_definition": "This container exclusively holds the official guidelines and benefits of exclusive breastfeeding for infants from birth to 6 months. It defines what constitutes exclusive breastfeeding and reinforces the 'no other food or drink, not even water' rule.",
+            "exclusion_rules": "This container strictly prohibits any information on complementary foods, solid foods, or formula feeding. It also forbids detailed breastfeeding troubleshooting (e.g., sore nipples, latching issues), which belongs in its dedicated node.",
+            "contributing_raw_files": [
+                "Breastfeeding knowledge base.md",
+                "CHILD CARE AFTER BIRTH.md",
+                "Complementary feeding KB.md",
+                "PNC nutrition and anemia.md"
+            ],
+            "target_seed_keywords": [
+                "exclusive_breastfeeding",
+                "ebf",
+                "infant_nutrition",
+                "0_to_6_months",
+                "breast_milk"
+            ]
+        },
+        {
+            "topic_slug": "breastfeeding_essentials_and_troubleshooting",
+            "display_name": "Breastfeeding Essentials and Troubleshooting",
+            "scope_definition": "This container is a comprehensive clinical guide to the mechanics of breastfeeding. It specifies correct positioning and latching techniques, signs of adequate milk transfer, methods for expressing and storing breast milk, and management of common problems like sore nipples, engorgement, and mastitis. It includes guidance for feeding during maternal illness.",
+            "exclusion_rules": "This container strictly prohibits the general benefits of exclusive breastfeeding or the schedule for introducing complementary foods. It is a 'how-to' and problem-solving guide, not a timeline-based nutritional policy node.",
+            "contributing_raw_files": [
+                "Breastfeeding knowledge base.md",
+                "CHILD CARE AFTER BIRTH.md"
+            ],
+            "target_seed_keywords": [
+                "breastfeeding_techniques",
+                "latching",
+                "positioning",
+                "expressed_breast_milk",
+                "sore_nipples",
+                "mastitis",
+                "engorgement"
+            ]
+        },
+        {
+            "topic_slug": "child_nutrition_complementary_feeding_6_to_24_months",
+            "display_name": "Child Nutrition: Complementary Feeding (6-24 Months)",
+            "scope_definition": "This container exclusively holds the protocols for introducing solid foods to infants from 6 months to 24 months. It specifies the timing, consistency, frequency, and quantity of complementary foods by age bracket (6-8m, 9-11m, 12-24m). It includes responsive feeding techniques and guidelines for dietary diversity.",
+            "exclusion_rules": "This container strictly prohibits any information on exclusive breastfeeding or the nutritional needs of children over 2 years old. All content related to the 0-6 month period is forbidden.",
+            "contributing_raw_files": [
+                "Complementary feeding KB.md",
+                "CHILD CARE AFTER BIRTH.md"
+            ],
+            "target_seed_keywords": [
+                "complementary_feeding",
+                "solid_foods",
+                "weaning",
+                "6_to_24_months",
+                "responsive_feeding",
+                "infant_diet"
+            ]
+        },
+        {
+            "topic_slug": "child_nutrition_and_health_2_to_5_years",
+            "display_name": "Child Nutrition and Health (2-5 Years)",
+            "scope_definition": "This container exclusively holds health and nutrition guidelines for children from their second birthday to their fifth birthday. It specifies age-appropriate dietary guidelines, portion sizes, physical activity recommendations, screen time limits, and healthy sleep requirements.",
+            "exclusion_rules": "This container strictly prohibits information related to infant feeding, complementary feeding, or growth monitoring charts. All content for children under 2 years of age is forbidden.",
+            "contributing_raw_files": [
+                "CHILD CARE AFTER BIRTH.md",
+                "ANTHROPOMETRY MEASURES OF CHILD KB.md"
+            ],
+            "target_seed_keywords": [
+                "child_nutrition",
+                "toddler_health",
+                "preschooler_health",
+                "physical_activity",
+                "screen_time",
+                "sleep_requirements",
+                "2_to_5_years"
+            ]
+        },
+        {
+            "topic_slug": "maternal_danger_signs_and_emergencies",
+            "display_name": "Maternal Danger Signs and Emergencies",
+            "scope_definition": "This is a high-alert container holding a critical checklist of danger signs during pregnancy, labor, or the immediate postpartum period that require immediate medical attention. It contains an itemized list of symptoms including severe bleeding, convulsions, severe headaches with blurred vision, high fever, and severe abdominal pain.",
+            "exclusion_rules": "This container strictly prohibits any routine care information. It must not contain ANC schedules, nutritional advice, or birth plans. It is for emergency symptom recognition only. It also forbids any danger signs related to infants or children.",
+            "contributing_raw_files": [
+                "Ante natal care document.md",
+                "Anaemia in Pregnancy chat bot.md",
+                "PNC nutrition and anemia.md"
+            ],
+            "target_seed_keywords": [
+                "maternal_danger_signs",
+                "pregnancy_emergencies",
+                "obstetric_emergencies",
+                "warning_signs",
+                "complication_readiness"
+            ]
+        },
+        {
+            "topic_slug": "child_danger_signs_and_emergencies",
+            "display_name": "Child Danger Signs and Emergencies",
+            "scope_definition": "This is a high-alert container holding a critical checklist of danger signs in infants and children (0-5 years) requiring immediate medical attention. It contains an itemized list of symptoms including inability to feed, convulsions, lethargy or unconsciousness, fast or difficult breathing, and high fever.",
+            "exclusion_rules": "This container strictly prohibits any routine care information. It must not contain immunization schedules, feeding guidelines, or growth charts. It is for emergency symptom recognition only. It also forbids any danger signs related to pregnant or postpartum mothers.",
+            "contributing_raw_files": [
+                "CHILD CARE AFTER BIRTH.md"
+            ],
+            "target_seed_keywords": [
+                "child_danger_signs",
+                "pediatric_emergencies",
+                "infant_warning_signs",
+                "sick_child"
+            ]
+        },
+        {
+            "topic_slug": "maternal_anemia_diagnosis_and_treatment",
+            "display_name": "Maternal Anemia: Diagnosis and Treatment",
+            "scope_definition": "This is an isolated clinical module for the management of maternal anemia. It contains the specific hemoglobin (Hb) level thresholds for diagnosis by trimester, definitions of mild/moderate/severe anemia, and the corresponding severity-based treatment protocols, including prophylactic vs. therapeutic IFA dosage and criteria for IV iron sucrose injections.",
+            "exclusion_rules": "This container strictly prohibits general nutritional advice for non-anemic women. The routine initiation of prophylactic IFA in Trimester 2 is documented in the Trimester 2 node; this node contains only the diagnostic criteria and therapeutic response protocols for diagnosed anemia.",
+            "contributing_raw_files": [
+                "Anaemia in Pregnancy chat bot.md",
+                "PNC nutrition and anemia.md",
+                "Essential Nutrients for A Pregnant Woman.md",
+                "Health Post service.md",
+                "Health Info Eng.md",
+                "Ante natal care document.md"
+            ],
+            "target_seed_keywords": [
+                "maternal_anemia",
+                "anemia_treatment",
+                "iron_deficiency",
+                "hemoglobin",
+                "ifa_therapy",
+                "iron_sucrose"
+            ]
+        },
+        {
+            "topic_slug": "low_birth_weight_and_preterm_infant_care",
+            "display_name": "Low Birth Weight and Preterm Infant Care",
+            "scope_definition": "This is a specialized clinical module for the care of vulnerable infants (preterm or <2.5kg). It contains detailed protocols for Kangaroo Mother Care (KMC), specialized feeding techniques for low birth weight infants, and distinct growth monitoring standards for this population.",
+            "exclusion_rules": "This container strictly prohibits all care guidelines for healthy, full-term infants. Standard vaccination schedules, standard feeding advice, and standard growth charts are explicitly forbidden.",
+            "contributing_raw_files": [
+                "CHILD CARE AFTER BIRTH.md",
+                "Breastfeeding knowledge base.md",
+                "ANTHROPOMETRY MEASURES OF CHILD KB.md",
+                "PNC nutrition and anemia.md",
+                "Anaemia in Pregnancy chat bot.md",
+                "Ante natal care document.md"
+            ],
+            "target_seed_keywords": [
+                "low_birth_weight",
+                "lbw",
+                "preterm_infant",
+                "kangaroo_mother_care",
+                "kmc",
+                "vulnerable_newborn"
+            ]
+        },
+        {
+            "topic_slug": "child_growth_monitoring_and_malnutrition",
+            "display_name": "Child Growth Monitoring and Malnutrition",
+            "scope_definition": "This is a reference data container for assessing child growth from 0-5 years. It contains the official WHO anthropometry charts (weight-for-age, height-for-age, weight-for-height) and the precise clinical definitions and diagnostic criteria for stunting, wasting, underweight, and overweight.",
+            "exclusion_rules": "This container strictly prohibits any information on feeding, nutrition, or treatment protocols. It is a data-and-definition node for diagnosis and monitoring only. All intervention guidelines are forbidden.",
+            "contributing_raw_files": [
+                "ANTHROPOMETRY MEASURES OF CHILD KB.md",
+                "PNC nutrition and anemia.md"
+            ],
+            "target_seed_keywords": [
+                "growth_monitoring",
+                "anthropometry",
+                "malnutrition",
+                "stunting",
+                "wasting",
+                "underweight",
+                "who_charts"
+            ]
+        },
+        {
+            "topic_slug": "immunization_schedule_and_faqs",
+            "display_name": "Immunization Schedule and FAQs",
+            "scope_definition": "This container is a dedicated reference for the National Immunization Schedule. It contains the complete vaccination timeline for pregnant women, infants, and children up to 16 years. It also includes FAQs addressing common side effects, absolute contraindications, and official catch-up immunization schedules.",
+            "exclusion_rules": "This container strictly prohibits general information about child health or disease prevention outside of vaccine-preventable diseases. It must not contain feeding advice or growth monitoring information.",
+            "contributing_raw_files": [
+                "IMMUNISATION QUESTIONS FOR CHATBOT.md",
+                "Ante natal care document.md",
+                "CHILD CARE AFTER BIRTH.md",
+                "Pradhan Mantri Matru Vandana Yojana.md",
+                "Health Post service.md",
+                "Health Info Eng.md"
+            ],
+            "target_seed_keywords": [
+                "immunization_schedule",
+                "vaccination",
+                "national_immunization_schedule",
+                "nis",
+                "vaccine_faqs",
+                "catch_up_vaccination"
+            ]
+        },
+        {
+            "topic_slug": "home_environment_safety_and_hygiene",
+            "display_name": "Home Environment: Safety and Hygiene",
+            "scope_definition": "This container exclusively holds guidelines for creating a safe and hygienic home. It specifies protocols for handwashing with soap, safe water storage and handling, food safety, prevention of common household accidents (burns, falls, poisoning), and the importance of a smoke-free environment.",
+            "exclusion_rules": "This container strictly prohibits any clinical or medical advice. It must not contain information on treating illness, managing symptoms, or administering medicine. It is focused solely on environmental prevention.",
+            "contributing_raw_files": [
+                "CHILD CARE AFTER BIRTH.md",
+                "Essential Nutrients for A Pregnant Woman.md",
+                "Ante natal care document.md",
+                "PNC nutrition and anemia.md",
+                "Complementary feeding KB.md",
+                "Anaemia in Pregnancy chat bot.md"
+            ],
+            "target_seed_keywords": [
+                "home_safety",
+                "hygiene",
+                "handwashing",
+                "food_safety",
+                "accident_prevention",
+                "safe_water"
+            ]
+        },
+        {
+            "topic_slug": "govt_scheme_pradhan_mantri_matru_vandana_yojana_pmmvy",
+            "display_name": "Govt. Scheme: Pradhan Mantri Matru Vandana Yojana (PMMVY)",
+            "scope_definition": "This is an isolated administrative container detailing the PMMVY scheme. It specifies the scheme's objectives, strict eligibility criteria (e.g., first live birth), the exact cash benefit structure and installment schedule, a checklist of required documentation, and the step-by-step application process.",
+            "exclusion_rules": "This container strictly prohibits any mention of other government schemes (JSY, JSSK). It also forbids any medical advice; it is a purely administrative and financial aid guide.",
+            "contributing_raw_files": [
+                "Pradhan Mantri Matru Vandana Yojana.md"
+            ],
+            "target_seed_keywords": [
+                "pmmvy",
+                "pradhan_mantri_matru_vandana_yojana",
+                "government_scheme",
+                "maternity_benefit"
+            ]
+        },
+        {
+            "topic_slug": "govt_scheme_janani_suraksha_yojana_jsy",
+            "display_name": "Govt. Scheme: Janani Suraksha Yojana (JSY)",
+            "scope_definition": "This is an isolated administrative container detailing the JSY scheme. It specifies the scheme's objective (promoting institutional delivery), the exact cash assistance amounts for urban areas in Maharashtra, strict eligibility criteria, and a checklist of required documentation for receiving the benefit.",
+            "exclusion_rules": "This container strictly prohibits any mention of other government schemes (PMMVY, JSSK). It also forbids any clinical information about labor or delivery; it is a purely administrative and financial incentive guide.",
+            "contributing_raw_files": [
+                "Janani Suraksha Yojana.md",
+                "Anaemia in Pregnancy chat bot.md"
+            ],
+            "target_seed_keywords": [
+                "jsy",
+                "janani_suraksha_yojana",
+                "government_scheme",
+                "institutional_delivery",
+                "cash_assistance"
+            ]
+        },
+        {
+            "topic_slug": "govt_scheme_janani_shishu_suraksha_karyakram_jssk",
+            "display_name": "Govt. Scheme: Janani Shishu Suraksha Karyakram (JSSK)",
+            "scope_definition": "This is an isolated administrative container detailing the JSSK scheme. It specifies the complete list of free entitlements for pregnant women and sick newborns at public health institutions. This includes free delivery, free C-section, free drugs and consumables, free diagnostics, free blood, free transport, and free diet during stay.",
+            "exclusion_rules": "This container strictly prohibits any mention of cash benefit schemes (PMMVY, JSY). It details entitlements to *services*, not direct cash transfers. It also forbids clinical protocols for the services themselves.",
+            "contributing_raw_files": [
+                "Government Schemes in Maternal Child Health.md",
+                "Health Post service.md",
+                "Health Info Eng.md"
+            ],
+            "target_seed_keywords": [
+                "jssk",
+                "janani_shishu_suraksha_karyakram",
+                "government_scheme",
+                "free_entitlements",
+                "maternal_health"
+            ]
+        },
+        {
+            "topic_slug": "local_health_services_and_schedules_mumbai",
+            "display_name": "Local Health Services and Schedules (Mumbai)",
+            "scope_definition": "This is a location-specific institutional directory for the Mumbai Metropolitan Region. It contains lists of public hospitals, maternity homes, and health posts with their addresses. It specifies the exact operational schedules for key services, such as ANC clinic days, immunization session times, and family planning service hours.",
+            "exclusion_rules": "This container strictly prohibits any general medical advice or national-level health guidelines. It must not contain information for facilities outside the defined Mumbai region. It is a 'where and when' directory, not a 'what and how' guide.",
+            "contributing_raw_files": [
+                "Health Post service.md",
+                "Health Info Eng.md",
+                "Ante natal care document.md",
+                "Anaemia in Pregnancy chat bot.md",
+                "Pradhan Mantri Matru Vandana Yojana.md",
+                "Janani Suraksha Yojana.md",
+                "Government Schemes in Maternal Child Health.md",
+                "IMMUNISATION QUESTIONS FOR CHATBOT.md"
+            ],
+            "target_seed_keywords": [
+                "mumbai_health_services",
+                "health_posts",
+                "mcgm",
+                "anc_schedule",
+                "immunization_schedule",
+                "local_directory"
+            ]
+        }
+    ]
+}

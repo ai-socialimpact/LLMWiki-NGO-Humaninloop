@@ -1,0 +1,93 @@
+AUTHORIZED TOPIC TAXONOMY AND CONTAINMENT DIRECTIVES
+
+**=== MATERNAL CARE: CHRONOLOGICAL TRACK ===**
+
+**/maternal_care_pre_conception/**
+**DEFINITION:** This container exclusively holds all guidelines for women planning a pregnancy, prior to conception. It specifies nutritional requirements for readiness (including ideal BMI and weight targets), mandatory pre-conception folic acid supplementation protocols, and lifestyle modifications.
+**EXCLUSION RULE:** This container strictly prohibits any information related to confirmed pregnancy. All content regarding pregnancy registration, antenatal check-ups (ANCs), trimester-specific care, or delivery is forbidden.
+
+**/maternal_care_trimester_1/**
+**DEFINITION:** This container exclusively holds all protocols for pregnant women from confirmation of pregnancy through week 12. It specifies the schedule and procedures for pregnancy registration and the first ANC, initial diagnostic tests (blood group, Hb, urine), nutritional plans for early pregnancy, and the Tetanus-Diphtheria (TD-1) vaccination schedule.
+**EXCLUSION RULE:** This container strictly prohibits information pertaining to Trimester 2 or 3. The initiation of Iron-Folic Acid (IFA) and calcium supplements, fetal anomaly scans, and birth preparedness planning are explicitly forbidden. Detailed anemia treatment protocols are also excluded.
+
+**/maternal_care_trimester_2/**
+**DEFINITION:** This container exclusively holds all protocols for pregnant women from week 13 through week 28. It specifies the schedule for the second ANC, the mandatory initiation of prophylactic Iron-Folic Acid (IFA) and calcium supplements, national deworming protocols (Albendazole), and the timing and purpose of the fetal anomaly scan.
+**EXCLUSION RULE:** This container strictly prohibits information pertaining to Trimester 1 or 3. Details of the first ANC, birth preparedness, and signs of labor are explicitly forbidden.
+
+**/maternal_care_trimester_3_and_birth_prep/**
+**DEFINITION:** This container exclusively holds all protocols for pregnant women from week 29 until delivery. It specifies the schedule for the third and fourth ANCs, comprehensive birth preparedness and complication readiness (BPCR) planning, checklists for delivery bag essentials, definitive signs of labor, and emergency contact protocols.
+**EXCLUSION RULE:** This container strictly prohibits information on postpartum care or newborn care. All content related to lactation, newborn vaccination, or the mother's post-delivery recovery is forbidden.
+
+**/maternal_postpartum_care_and_nutrition/**
+**DEFINITION:** This container is exclusively dedicated to the mother's health for the first 6 months after delivery. It specifies postpartum nutritional requirements for recovery and lactation, the protocol for continuation of IFA and calcium supplements, guidelines for physical recovery, and indicators for postpartum mental well-being screening.
+**EXCLUSION RULE:** This container strictly prohibits all information related to newborn or infant care. Details of breastfeeding techniques, infant feeding, or infant health are explicitly forbidden and belong in their respective pediatric nodes.
+
+**=== PEDIATRIC CARE: DEVELOPMENTAL HORIZONS ===**
+
+**/newborn_immediate_and_postnatal_care/**
+**DEFINITION:** This container exclusively holds all essential care protocols for a newborn from birth to 28 days. It specifies immediate actions at birth (drying, cord clamping), thermal regulation, umbilical cord care, and the schedule for initial vaccinations (BCG, OPV-0, Hepatitis B-0).
+**EXCLUSION RULE:** This container strictly prohibits information on the mother's postpartum health. It also forbids details on long-term infant feeding beyond establishing initial breastfeeding and any immunization scheduled after 28 days.
+
+**/infant_nutrition_exclusive_breastfeeding_0_to_6_months/**
+**DEFINITION:** This container exclusively holds the official guidelines and benefits of exclusive breastfeeding for infants from birth to 6 months. It defines what constitutes exclusive breastfeeding and reinforces the "no other food or drink, not even water" rule.
+**EXCLUSION RULE:** This container strictly prohibits any information on complementary foods, solid foods, or formula feeding. It also forbids detailed breastfeeding troubleshooting (e.g., sore nipples, latching issues), which belongs in its dedicated node.
+
+**/breastfeeding_essentials_and_troubleshooting/**
+**DEFINITION:** This container is a comprehensive clinical guide to the mechanics of breastfeeding. It specifies correct positioning and latching techniques, signs of adequate milk transfer, methods for expressing and storing breast milk, and management of common problems like sore nipples, engorgement, and mastitis. It includes guidance for feeding during maternal illness.
+**EXCLUSION RULE:** This container strictly prohibits the general benefits of exclusive breastfeeding or the schedule for introducing complementary foods. It is a "how-to" and problem-solving guide, not a timeline-based nutritional policy node.
+
+**/child_nutrition_complementary_feeding_6_to_24_months/**
+**DEFINITION:** This container exclusively holds the protocols for introducing solid foods to infants from 6 months to 24 months. It specifies the timing, consistency, frequency, and quantity of complementary foods by age bracket (6-8m, 9-11m, 12-24m). It includes responsive feeding techniques and guidelines for dietary diversity.
+**EXCLUSION RULE:** This container strictly prohibits any information on exclusive breastfeeding or the nutritional needs of children over 2 years old. All content related to the 0-6 month period is forbidden.
+
+**/child_nutrition_and_health_2_to_5_years/**
+**DEFINITION:** This container exclusively holds health and nutrition guidelines for children from their second birthday to their fifth birthday. It specifies age-appropriate dietary guidelines, portion sizes, physical activity recommendations, screen time limits, and healthy sleep requirements.
+**EXCLUSION RULE:** This container strictly prohibits information related to infant feeding, complementary feeding, or growth monitoring charts. All content for children under 2 years of age is forbidden.
+
+**=== ACUTE CLINICAL TRIGGERS & SPECIALIZED NODES ===**
+
+**/maternal_danger_signs_and_emergencies/**
+**DEFINITION:** This is a high-alert container holding a critical checklist of danger signs during pregnancy, labor, or the immediate postpartum period that require immediate medical attention. It contains an itemized list of symptoms including severe bleeding, convulsions, severe headaches with blurred vision, high fever, and severe abdominal pain.
+**EXCLUSION RULE:** This container strictly prohibits any routine care information. It must not contain ANC schedules, nutritional advice, or birth plans. It is for emergency symptom recognition only. It also forbids any danger signs related to infants or children.
+
+**/child_danger_signs_and_emergencies/**
+**DEFINITION:** This is a high-alert container holding a critical checklist of danger signs in infants and children (0-5 years) requiring immediate medical attention. It contains an itemized list of symptoms including inability to feed, convulsions, lethargy or unconsciousness, fast or difficult breathing, and high fever.
+**EXCLUSION RULE:** This container strictly prohibits any routine care information. It must not contain immunization schedules, feeding guidelines, or growth charts. It is for emergency symptom recognition only. It also forbids any danger signs related to pregnant or postpartum mothers.
+
+**/maternal_anemia_diagnosis_and_treatment/**
+**DEFINITION:** This is an isolated clinical module for the management of maternal anemia. It contains the specific hemoglobin (Hb) level thresholds for diagnosis by trimester, definitions of mild/moderate/severe anemia, and the corresponding severity-based treatment protocols, including prophylactic vs. therapeutic IFA dosage and criteria for IV iron sucrose injections.
+**EXCLUSION RULE:** This container strictly prohibits general nutritional advice for non-anemic women. The routine initiation of prophylactic IFA in Trimester 2 is documented in the Trimester 2 node; this node contains only the diagnostic criteria and therapeutic response protocols for diagnosed anemia.
+
+**/low_birth_weight_and_preterm_infant_care/**
+**DEFINITION:** This is a specialized clinical module for the care of vulnerable infants (preterm or <2.5kg). It contains detailed protocols for Kangaroo Mother Care (KMC), specialized feeding techniques for low birth weight infants, and distinct growth monitoring standards for this population.
+**EXCLUSION RULE:** This container strictly prohibits all care guidelines for healthy, full-term infants. Standard vaccination schedules, standard feeding advice, and standard growth charts are explicitly forbidden.
+
+**/child_growth_monitoring_and_malnutrition/**
+**DEFINITION:** This is a reference data container for assessing child growth from 0-5 years. It contains the official WHO anthropometry charts (weight-for-age, height-for-age, weight-for-height) and the precise clinical definitions and diagnostic criteria for stunting, wasting, underweight, and overweight.
+**EXCLUSION RULE:** This container strictly prohibits any information on feeding, nutrition, or treatment protocols. It is a data-and-definition node for diagnosis and monitoring only. All intervention guidelines are forbidden.
+
+**/immunization_schedule_and_faqs/**
+**DEFINITION:** This container is a dedicated reference for the National Immunization Schedule. It contains the complete vaccination timeline for pregnant women, infants, and children up to 16 years. It also includes FAQs addressing common side effects, absolute contraindications, and official catch-up immunization schedules.
+**EXCLUSION RULE:** This container strictly prohibits general information about child health or disease prevention outside of vaccine-preventable diseases. It must not contain feeding advice or growth monitoring information.
+
+**/home_environment_safety_and_hygiene/**
+**DEFINITION:** This container exclusively holds guidelines for creating a safe and hygienic home. It specifies protocols for handwashing with soap, safe water storage and handling, food safety, prevention of common household accidents (burns, falls, poisoning), and the importance of a smoke-free environment.
+**EXCLUSION RULE:** This container strictly prohibits any clinical or medical advice. It must not contain information on treating illness, managing symptoms, or administering medicine. It is focused solely on environmental prevention.
+
+**=== GOVERNMENT SCHEMES & INSTITUTIONAL INFRASTRUCTURE ===**
+
+**/govt_scheme_pradhan_mantri_matru_vandana_yojana_pmmvy/**
+**DEFINITION:** This is an isolated administrative container detailing the PMMVY scheme. It specifies the scheme's objectives, strict eligibility criteria (e.g., first live birth), the exact cash benefit structure and installment schedule, a checklist of required documentation, and the step-by-step application process.
+**EXCLUSION RULE:** This container strictly prohibits any mention of other government schemes (JSY, JSSK). It also forbids any medical advice; it is a purely administrative and financial aid guide.
+
+**/govt_scheme_janani_suraksha_yojana_jsy/**
+**DEFINITION:** This is an isolated administrative container detailing the JSY scheme. It specifies the scheme's objective (promoting institutional delivery), the exact cash assistance amounts for urban areas in Maharashtra, strict eligibility criteria, and a checklist of required documentation for receiving the benefit.
+**EXCLUSION RULE:** This container strictly prohibits any mention of other government schemes (PMMVY, JSSK). It also forbids any clinical information about labor or delivery; it is a purely administrative and financial incentive guide.
+
+**/govt_scheme_janani_shishu_suraksha_karyakram_jssk/**
+**DEFINITION:** This is an isolated administrative container detailing the JSSK scheme. It specifies the complete list of free entitlements for pregnant women and sick newborns at public health institutions. This includes free delivery, free C-section, free drugs and consumables, free diagnostics, free blood, free transport, and free diet during stay.
+**EXCLUSION RULE:** This container strictly prohibits any mention of cash benefit schemes (PMMVY, JSY). It details entitlements to *services*, not direct cash transfers. It also forbids clinical protocols for the services themselves.
+
+**/local_health_services_and_schedules_mumbai/**
+**DEFINITION:** This is a location-specific institutional directory for the Mumbai Metropolitan Region. It contains lists of public hospitals, maternity homes, and health posts with their addresses. It specifies the exact operational schedules for key services, such as ANC clinic days, immunization session times, and family planning service hours.
+**EXCLUSION RULE:** This container strictly prohibits any general medical advice or national-level health guidelines. It must not contain information for facilities outside the defined Mumbai region. It is a "where and when" directory, not a "what and how" guide.
