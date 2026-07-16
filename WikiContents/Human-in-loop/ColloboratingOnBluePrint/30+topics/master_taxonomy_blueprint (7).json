@@ -1,0 +1,484 @@
+{
+    "global_reasoning": "The master configuration was derived by systematically deconstructing 14 raw source documents and re-compiling their contents into 27 mutually exclusive, demand-driven topics. The primary architectural strategy involved creating chronological tracks for maternal and pediatric care, ensuring that time-sensitive information is isolated within its correct window (e.g., `antenatal_care_trimester1`). Cross-cutting themes like emergency protocols, specific procedures (KMC), and government schemes were extracted into their own dedicated containers to facilitate high-precision, error-free retrieval. Broad, multi-topic source files like 'CHILD CARE AFTER BIRTH.md' and 'IMMUNISATION QUESTIONS FOR CHATBOT.md' were carefully partitioned, with their constituent data points mapped to multiple relevant topic containers. Conversely, highly specific files like 'Pradhan Mantri Matru Vandana Yojana.md' were mapped directly to a single, corresponding topic. This process transforms a loose collection of documents into a structured, query-optimized knowledge matrix.",
+    "permitted_topics": [
+        {
+            "topic_slug": "preconception_health_planning",
+            "display_name": "Pre-Pregnancy Health & Planning",
+            "scope_definition": "Strictly contains guidelines for women planning a pregnancy. This includes: optimal diet and folic acid supplementation pre-conception, ideal body weight, review of existing medical conditions and medications, necessary vaccinations (e.g., Rubella, Hepatitis B), and cessation of tobacco, alcohol, and substance use.",
+            "exclusion_rules": "This container is forbidden from containing any information related to an active pregnancy. It must not discuss trimesters, antenatal care schedules, or delivery. All content must precede conception.",
+            "contributing_raw_files": [
+                "Essential Nutrients for A Pregnant Woman.md",
+                "PNC nutrition and anemia.md"
+            ],
+            "target_seed_keywords": [
+                "preconception",
+                "planning pregnancy",
+                "folic acid",
+                "pre-pregnancy health",
+                "vaccinations",
+                "ideal weight"
+            ]
+        },
+        {
+            "topic_slug": "antenatal_care_trimester1",
+            "display_name": "Pregnancy Care: First Trimester (Weeks 1-12)",
+            "scope_definition": "Exclusively details all protocols for the first trimester. This includes: schedule of the first ANC visit, required diagnostic tests (hemoglobin, blood group, HIV, VDRL, urine), initial IFA supplementation protocol, nutritional guidance for managing nausea and ensuring foundational growth, and management of common T1 symptoms.",
+            "exclusion_rules": "Forbidden from discussing T2/T3 procedures, birth planning, or postpartum care. Emergency danger signs are not detailed here; this container may only list them with a direct reference to `emergency_maternal_danger_signs`. Management of severe anemia (Hb < 7) is explicitly excluded.",
+            "contributing_raw_files": [
+                "Ante natal care document.md",
+                "PNC nutrition and anemia.md",
+                "Anaemia in Pregnancy chat bot.md"
+            ],
+            "target_seed_keywords": [
+                "first trimester",
+                "trimester 1",
+                "anc visit",
+                "antenatal care",
+                "weeks 1-12",
+                "ifa supplementation",
+                "nausea"
+            ]
+        },
+        {
+            "topic_slug": "antenatal_care_trimester2",
+            "display_name": "Pregnancy Care: Second Trimester (Weeks 13-28)",
+            "scope_definition": "Exclusively details all protocols for the second trimester. This includes: schedule for ANC visits in T2, Tetanus Toxoid (TT) injection schedule, increased caloric and protein requirements, monitoring fetal movement ('quickening'), and the protocol for the TIFFA (anomaly) scan.",
+            "exclusion_rules": "Forbidden from containing information from T1 or T3. Birth preparedness and delivery planning are explicitly excluded. Details of government schemes for delivery are forbidden.",
+            "contributing_raw_files": [
+                "Ante natal care document.md",
+                "PNC nutrition and anemia.md",
+                "IMMUNISATION QUESTIONS FOR CHATBOT.md"
+            ],
+            "target_seed_keywords": [
+                "second trimester",
+                "trimester 2",
+                "tetanus toxoid",
+                "tt injection",
+                "fetal movement",
+                "anomaly scan",
+                "weeks 13-28"
+            ]
+        },
+        {
+            "topic_slug": "antenatal_care_trimester3",
+            "display_name": "Pregnancy Care: Third Trimester & Birth Preparedness (Weeks 29-40+)",
+            "scope_definition": "Exclusively details all protocols for the third trimester. This includes: increased frequency of ANC visits, final TT booster dose, counseling on signs of labor, creating a birth and emergency readiness plan (identifying facility, transport, finances), and recognizing the difference between true and false labor.",
+            "exclusion_rules": "Forbidden from detailing postpartum or newborn care procedures. The mechanics of delivery itself are not described. Financial details of government schemes are excluded and must reside in their dedicated containers.",
+            "contributing_raw_files": [
+                "Ante natal care document.md",
+                "PNC nutrition and anemia.md"
+            ],
+            "target_seed_keywords": [
+                "third trimester",
+                "trimester 3",
+                "birth preparedness",
+                "signs of labor",
+                "delivery plan",
+                "weeks 29-40"
+            ]
+        },
+        {
+            "topic_slug": "postpartum_care_mother_0_6_weeks",
+            "display_name": "Post-Delivery Mother Care: The First 6 Weeks",
+            "scope_definition": "Strictly contains guidelines for the mother during the puerperium (first 42 days post-delivery). This includes: monitoring for postpartum hemorrhage, infection, and eclampsia; nutritional requirements for recovery and lactation; perineal care; and the schedule for the first postpartum check-up.",
+            "exclusion_rules": "Forbidden from containing newborn care information (which belongs in `newborn_care_0_28_days`). Long-term (post-6 week) maternal health, contraception, or infant care beyond 6 weeks is explicitly excluded.",
+            "contributing_raw_files": [
+                "PNC nutrition and anemia.md"
+            ],
+            "target_seed_keywords": [
+                "postpartum",
+                "postnatal",
+                "puerperium",
+                "mother care",
+                "after delivery",
+                "lactation",
+                "first 6 weeks"
+            ]
+        },
+        {
+            "topic_slug": "newborn_care_0_28_days",
+            "display_name": "Newborn Care: The First Month (0-28 Days)",
+            "scope_definition": "Exclusively details care for a neonate. This includes: immediate post-birth care (cord care, eye care), maintaining warmth, exclusive breastfeeding initiation (colostrum), monitoring urination/stools, and the at-birth vaccination schedule (BCG, OPV-0, Hep B-0).",
+            "exclusion_rules": "Forbidden from discussing care for infants older than 28 days. Emergency danger signs are not detailed here, only listed with a reference to `emergency_newborn_danger_signs`. Low Birth Weight protocols are excluded.",
+            "contributing_raw_files": [
+                "CHILD CARE AFTER BIRTH.md",
+                "IMMUNISATION QUESTIONS FOR CHATBOT.md",
+                "Breastfeeding knowledge base.md"
+            ],
+            "target_seed_keywords": [
+                "newborn care",
+                "neonate",
+                "0-28 days",
+                "cord care",
+                "colostrum",
+                "bcg vaccine",
+                "opv-0"
+            ]
+        },
+        {
+            "topic_slug": "infant_care_1_6_months",
+            "display_name": "Infant Care: 1 to 6 Months",
+            "scope_definition": "Strictly contains guidelines for infants aged 1-6 months. This includes: exclusive breastfeeding reinforcement, immunization schedule for 6, 10, and 14 weeks (Pentavalent, Rota, PCV, fIPV), monitoring developmental milestones (head control, social smile), and safe sleep practices.",
+            "exclusion_rules": "Forbidden from containing any information on complementary feeding (solid foods). Care for newborns (<1 month) or older infants (>6 months) is explicitly excluded.",
+            "contributing_raw_files": [
+                "CHILD CARE AFTER BIRTH.md",
+                "IMMUNISATION QUESTIONS FOR CHATBOT.md",
+                "Breastfeeding knowledge base.md"
+            ],
+            "target_seed_keywords": [
+                "infant care",
+                "1-6 months",
+                "exclusive breastfeeding",
+                "pentavalent vaccine",
+                "developmental milestones",
+                "head control"
+            ]
+        },
+        {
+            "topic_slug": "infant_care_6_12_months",
+            "display_name": "Infant Care: 6 to 12 Months",
+            "scope_definition": "Exclusively details care for infants aged 6-12 months. This includes: the introduction of complementary foods (timing, texture, frequency) alongside continued breastfeeding, immunization schedule for 9 months (MMR-1, Vitamin A), monitoring developmental milestones (sitting, crawling), and oral health basics.",
+            "exclusion_rules": "Forbidden from discussing exclusive breastfeeding. Detailed recipes or advanced feeding principles are excluded (see `complementary_feeding_principles`). Care for toddlers (>1 year) is forbidden.",
+            "contributing_raw_files": [
+                "Complementary feeding KB.md",
+                "CHILD CARE AFTER BIRTH.md",
+                "IMMUNISATION QUESTIONS FOR CHATBOT.md"
+            ],
+            "target_seed_keywords": [
+                "infant care",
+                "6-12 months",
+                "complementary feeding",
+                "solid foods",
+                "mmr vaccine",
+                "vitamin a",
+                "crawling"
+            ]
+        },
+        {
+            "topic_slug": "toddler_care_1_2_years",
+            "display_name": "Toddler Care: 1 to 2 Years (12-24 Months)",
+            "scope_definition": "Strictly contains guidelines for toddlers aged 12-24 months. This includes: transitioning to family foods, immunization schedule (DPT/OPV boosters, MMR-2), monitoring developmental milestones (walking, first words), and strategies for managing toddler behavior and ensuring home safety.",
+            "exclusion_rules": "Forbidden from discussing infant or newborn care. Guidelines for children over 2 years of age are explicitly excluded. The introduction of complementary feeding is not detailed here.",
+            "contributing_raw_files": [
+                "IMMUNISATION QUESTIONS FOR CHATBOT.md",
+                "Complementary feeding KB.md",
+                "CHILD CARE AFTER BIRTH.md"
+            ],
+            "target_seed_keywords": [
+                "toddler care",
+                "1-2 years",
+                "12-24 months",
+                "dpt booster",
+                "first words",
+                "walking",
+                "family foods"
+            ]
+        },
+        {
+            "topic_slug": "child_care_2_5_years",
+            "display_name": "Child Care: 2 to 5 Years",
+            "scope_definition": "Exclusively details care for preschool-aged children. This includes: ensuring a balanced diet, deworming schedules, monitoring growth against standard charts, toilet training, and promoting pre-school readiness and social skills.",
+            "exclusion_rules": "Forbidden from containing information on infant/toddler care or immunizations typically given before age 2. Emergency danger signs are listed but not detailed (see `emergency_child_danger_signs_under5`).",
+            "contributing_raw_files": [
+                "IMMUNISATION QUESTIONS FOR CHATBOT.md",
+                "CHILD CARE AFTER BIRTH.md",
+                "ANTHROPOMETRY MEASURES OF CHILD KB.md"
+            ],
+            "target_seed_keywords": [
+                "child care",
+                "2-5 years",
+                "preschool",
+                "deworming",
+                "toilet training",
+                "growth monitoring"
+            ]
+        },
+        {
+            "topic_slug": "emergency_maternal_danger_signs",
+            "display_name": "EMERGENCY: Pregnancy & Postpartum Danger Signs",
+            "scope_definition": "A high-density checklist of critical maternal danger signs requiring immediate facility visit. Contains: severe headache/blurry vision, convulsions, high fever, severe abdominal pain, vaginal bleeding, and foul-smelling discharge. Each sign includes the explicit instruction: \"GO TO THE NEAREST HOSPITAL IMMEDIATELY.\"",
+            "exclusion_rules": "Forbidden from containing routine care information, symptom management for non-emergencies, or facility contact details (which belong in the directory).",
+            "contributing_raw_files": [
+                "Ante natal care document.md"
+            ],
+            "target_seed_keywords": [
+                "danger signs",
+                "maternal emergency",
+                "pregnancy warning",
+                "severe headache",
+                "vaginal bleeding",
+                "convulsions"
+            ]
+        },
+        {
+            "topic_slug": "emergency_severe_anemia_protocol",
+            "display_name": "EMERGENCY: Severe Anemia in Pregnancy (HB < 7)",
+            "scope_definition": "Strictly contains the emergency protocol for pregnant women with a hemoglobin level below 7 g/dL. This includes the immediate need for referral for blood transfusion, risks to mother and fetus, and facility-level management expectations.",
+            "exclusion_rules": "Forbidden from discussing mild or moderate anemia, IFA supplementation, or diet-based management. This is an emergency protocol only.",
+            "contributing_raw_files": [
+                "Anaemia in Pregnancy chat bot.md",
+                "PNC nutrition and anemia.md"
+            ],
+            "target_seed_keywords": [
+                "severe anemia",
+                "hb < 7",
+                "blood transfusion",
+                "anemia emergency",
+                "iron sucrose"
+            ]
+        },
+        {
+            "topic_slug": "emergency_newborn_danger_signs",
+            "display_name": "EMERGENCY: Newborn Danger Signs (0-28 Days)",
+            "scope_definition": "A high-density checklist of critical newborn danger signs. Contains: inability to feed, convulsions, fast breathing (>60/min), severe chest in-drawing, high/low body temperature, and lethargy. Each sign includes the explicit instruction: \"GO TO THE NEAREST HOSPITAL IMMEDIATELY.\"",
+            "exclusion_rules": "Forbidden from containing routine newborn care, feeding advice, or vaccination schedules.",
+            "contributing_raw_files": [
+                "CHILD CARE AFTER BIRTH.md"
+            ],
+            "target_seed_keywords": [
+                "newborn danger signs",
+                "neonate emergency",
+                "fast breathing",
+                "lethargy",
+                "inability to feed"
+            ]
+        },
+        {
+            "topic_slug": "emergency_child_danger_signs_under5",
+            "display_name": "EMERGENCY: Danger Signs in Children Under 5",
+            "scope_definition": "A high-density checklist of critical danger signs for infants and children (1 month to 5 years). Contains: inability to drink/breastfeed, vomiting everything, convulsions, lethargy/unconsciousness, and stridor. Each sign includes the explicit instruction: \"GO TO THE NEAREST HOSPITAL IMMEDIATELY.\"",
+            "exclusion_rules": "Forbidden from containing routine care, nutrition, or management of common, non-emergency illnesses like a simple cold or mild diarrhea.",
+            "contributing_raw_files": [
+                "CHILD CARE AFTER BIRTH.md"
+            ],
+            "target_seed_keywords": [
+                "child danger signs",
+                "under 5 emergency",
+                "convulsions",
+                "lethargy",
+                "stridor",
+                "vomiting everything"
+            ]
+        },
+        {
+            "topic_slug": "protocol_low_birth_weight_infant",
+            "display_name": "Special Care for Low Birth Weight (LBW) Babies",
+            "scope_definition": "Exclusively details the specialized care protocol for infants born weighing less than 2.5 kg. This includes: extra thermal care, prevention of infection, specific feeding support (frequency, volume), and enhanced growth monitoring.",
+            "exclusion_rules": "Forbidden from containing care guidelines for normal-weight babies. The specific technique of Kangaroo Mother Care is excluded and resides in its own container.",
+            "contributing_raw_files": [
+                "ANTHROPOMETRY MEASURES OF CHILD KB.md",
+                "Breastfeeding knowledge base.md",
+                "CHILD CARE AFTER BIRTH.md"
+            ],
+            "target_seed_keywords": [
+                "low birth weight",
+                "lbw",
+                "preterm",
+                "small for gestational age",
+                "infant feeding",
+                "thermal care"
+            ]
+        },
+        {
+            "topic_slug": "protocol_kangaroo_mother_care",
+            "display_name": "Kangaroo Mother Care (KMC) Protocol",
+            "scope_definition": "Strictly contains the step-by-step protocol for implementing Kangaroo Mother Care for stable LBW infants. This includes: eligibility criteria, positioning technique (skin-to-skin), duration, and benefits for thermal regulation, breastfeeding, and bonding.",
+            "exclusion_rules": "Forbidden from discussing general LBW care, feeding formulas, or care for non-LBW infants.",
+            "contributing_raw_files": [
+                "CHILD CARE AFTER BIRTH.md",
+                "Breastfeeding knowledge base.md"
+            ],
+            "target_seed_keywords": [
+                "kangaroo mother care",
+                "kmc",
+                "skin-to-skin",
+                "lbw care",
+                "thermal regulation"
+            ]
+        },
+        {
+            "topic_slug": "breastfeeding_technique_and_challenges",
+            "display_name": "Breastfeeding: Latching, Positions & Common Issues",
+            "scope_definition": "A focused technical guide on the mechanics of breastfeeding. Contains: detailed descriptions of correct attachment and positioning, how to ensure milk transfer, and troubleshooting common problems like sore nipples, engorgement, and perceived low milk supply.",
+            "exclusion_rules": "Forbidden from containing timeline-specific advice (e.g., \"breastfeed exclusively for 6 months,\" which belongs in the chronological tracks). Does not contain information on complementary feeding.",
+            "contributing_raw_files": [
+                "Breastfeeding knowledge base.md"
+            ],
+            "target_seed_keywords": [
+                "breastfeeding technique",
+                "latching",
+                "positioning",
+                "sore nipples",
+                "engorgement",
+                "milk supply"
+            ]
+        },
+        {
+            "topic_slug": "complementary_feeding_principles_6_24m",
+            "display_name": "Guide to Introducing Solid Foods (6-24 Months)",
+            "scope_definition": "A comprehensive reference on the principles of complementary feeding. Details the \"what, when, and how\" of introducing solids: food groups, texture progression by age, meal frequency and quantity, and responsive feeding techniques.",
+            "exclusion_rules": "Forbidden from containing general infant care advice or immunization schedules. The specific prompt to *begin* complementary feeding at 6 months resides in `infant_care_6_12_months`.",
+            "contributing_raw_files": [
+                "Complementary feeding KB.md"
+            ],
+            "target_seed_keywords": [
+                "complementary feeding",
+                "introducing solids",
+                "6-24 months",
+                "weaning",
+                "responsive feeding",
+                "food texture"
+            ]
+        },
+        {
+            "topic_slug": "immunization_schedule_master",
+            "display_name": "Complete Vaccination Schedule (Birth to 16 Years)",
+            "scope_definition": "The master, consolidated immunization schedule as per the National Immunization Schedule (NIS), India. Presented as a single, authoritative chart detailing vaccine, disease prevented, and administration age/dose.",
+            "exclusion_rules": "Forbidden from containing FAQs, catch-up schedule logic, or details about vaccine side effects. It is a schedule reference ONLY.",
+            "contributing_raw_files": [
+                "IMMUNISATION QUESTIONS FOR CHATBOT.md"
+            ],
+            "target_seed_keywords": [
+                "immunization schedule",
+                "vaccination chart",
+                "nis",
+                "national immunization schedule",
+                "vaccine timeline"
+            ]
+        },
+        {
+            "topic_slug": "immunization_faqs_catchup",
+            "display_name": "Vaccination FAQs & Catch-Up Schedules",
+            "scope_definition": "Exclusively contains answers to frequently asked questions about vaccines (e.g., managing mild fever post-vaccination) and the official logic/rules for \"catch-up\" schedules for children who have missed doses.",
+            "exclusion_rules": "Forbidden from containing the primary immunization schedule itself. This container is for exceptions and queries ONLY.",
+            "contributing_raw_files": [
+                "IMMUNISATION QUESTIONS FOR CHATBOT.md"
+            ],
+            "target_seed_keywords": [
+                "vaccination faqs",
+                "catch-up schedule",
+                "missed vaccine",
+                "vaccine side effects",
+                "immunization questions"
+            ]
+        },
+        {
+            "topic_slug": "child_growth_monitoring_protocol",
+            "display_name": "Child Growth Charts & Malnutrition Guide",
+            "scope_definition": "Details the protocol for monitoring child growth. Contains: how to read WHO growth charts (weight-for-age, height-for-age, weight-for-height), definitions of Moderate Acute Malnutrition (MAM) and Severe Acute Malnutrition (SAM), and the criteria for referral.",
+            "exclusion_rules": "Forbidden from containing dietary advice for normally growing children. This is a monitoring and diagnostic tool ONLY.",
+            "contributing_raw_files": [
+                "ANTHROPOMETRY MEASURES OF CHILD KB.md"
+            ],
+            "target_seed_keywords": [
+                "growth monitoring",
+                "growth charts",
+                "malnutrition",
+                "sam",
+                "mam",
+                "stunting",
+                "wasting",
+                "anthropometry"
+            ]
+        },
+        {
+            "topic_slug": "hygiene_and_sanitation_home",
+            "display_name": "Hygiene and Safety Protocols for the Home",
+            "scope_definition": "A thematic guide on creating a safe and hygienic environment for a child. Contains: handwashing technique, safe water storage and treatment, food safety, and preventing common household accidents (burns, falls, poisoning).",
+            "exclusion_rules": "Forbidden from containing personal hygiene instructions tied to a specific age (e.g., cord care, which is in `newborn_care_0_28_days`).",
+            "contributing_raw_files": [
+                "CHILD CARE AFTER BIRTH.md",
+                "Essential Nutrients for A Pregnant Woman.md",
+                "Ante natal care document.md"
+            ],
+            "target_seed_keywords": [
+                "home hygiene",
+                "sanitation",
+                "handwashing",
+                "safe water",
+                "food safety",
+                "accident prevention"
+            ]
+        },
+        {
+            "topic_slug": "scheme_pmmvy_guide",
+            "display_name": "Government Scheme: Pradhan Mantri Matru Vandana Yojana (PMMVY)",
+            "scope_definition": "Exclusively details the PMMVY cash benefit scheme. Contains: eligibility criteria, the three-installment cash transfer structure (amount and timing), required documentation (Aadhaar, bank account), and the step-by-step application process.",
+            "exclusion_rules": "Forbidden from containing medical advice or details of any other government scheme.",
+            "contributing_raw_files": [
+                "Pradhan Mantri Matru Vandana Yojana.md"
+            ],
+            "target_seed_keywords": [
+                "pmmvy",
+                "pradhan mantri matru vandana yojana",
+                "maternity benefit",
+                "cash transfer"
+            ]
+        },
+        {
+            "topic_slug": "scheme_jsy_guide",
+            "display_name": "Government Scheme: Janani Suraksha Yojana (JSY)",
+            "scope_definition": "Exclusively details the JSY scheme to promote institutional delivery. Contains: eligibility criteria, cash assistance amounts for rural/urban and home/institutional delivery, role of the ASHA worker, and the process for receiving payment.",
+            "exclusion_rules": "Forbidden from containing medical advice or details of any other government scheme.",
+            "contributing_raw_files": [
+                "Janani Suraksha Yojana.md"
+            ],
+            "target_seed_keywords": [
+                "jsy",
+                "janani suraksha yojana",
+                "institutional delivery",
+                "asha",
+                "cash assistance"
+            ]
+        },
+        {
+            "topic_slug": "scheme_jssk_guide",
+            "display_name": "Government Scheme: Janani Shishu Suraksha Karyakram (JSSK)",
+            "scope_definition": "Exclusively details the JSSK scheme for free services. Contains: a list of entitlements (free delivery, C-section, drugs, diet, blood, transport) for mothers and sick newborns (up to 30 days), and how to access these entitlements at public health facilities.",
+            "exclusion_rules": "Forbidden from containing cash benefit information (which belongs in JSY/PMMVY) or medical protocols. This is a guide to service entitlements ONLY.",
+            "contributing_raw_files": [
+                "Government Schemes in Maternal Child Health.md"
+            ],
+            "target_seed_keywords": [
+                "jssk",
+                "janani shishu suraksha karyakram",
+                "free delivery",
+                "free entitlements",
+                "free transport"
+            ]
+        },
+        {
+            "topic_slug": "directory_mumbai_health_facilities",
+            "display_name": "Directory of Mumbai Public Health Facilities",
+            "scope_definition": "A structured directory of public health facilities in Mumbai. Contains: names, addresses, and contact information for Municipal Hospitals, Maternity Homes, and Health Posts, organized by ward.",
+            "exclusion_rules": "Forbidden from containing service schedules, medical advice, or details of government schemes. It is a directory ONLY.",
+            "contributing_raw_files": [
+                "Health Info Eng.md",
+                "Health Post service.md"
+            ],
+            "target_seed_keywords": [
+                "mumbai health facilities",
+                "hospital directory",
+                "maternity homes",
+                "health posts",
+                "mcgm hospitals"
+            ]
+        },
+        {
+            "topic_slug": "protocol_health_post_services",
+            "display_name": "Health Post Service Schedules & Offerings",
+            "scope_definition": "Details the specific services and operational schedules of a typical urban Health Post. Contains: days and times for ANC clinics, immunization sessions, and family planning services. Lists the standard equipment and staff roles at a Health Post.",
+            "exclusion_rules": "Forbidden from containing a directory of all facilities (see `directory_mumbai_health_facilities`) or detailed medical protocols. This container describes the *function* of a Health Post.",
+            "contributing_raw_files": [
+                "Health Info Eng.md",
+                "Health Post service.md"
+            ],
+            "target_seed_keywords": [
+                "health post services",
+                "anc clinic schedule",
+                "immunization session",
+                "health post timings"
+            ]
+        }
+    ]
+}
