@@ -32,7 +32,7 @@ This framework treats raw documents as uncompiled source code, processing them i
 
 
 
-## 💎 Core Benefits of the Multi-Pass Compilation Architecture
+## 💎 Core Benefits of the Multi-Pass Compilation Architecture based implemention of LLM Wiki
 
 | Dynamic Feature | Impact & Business Benefit for NGOs | Technical Idea | Deep Technical Summary |
 | :--- | :--- | :--- | :--- |
