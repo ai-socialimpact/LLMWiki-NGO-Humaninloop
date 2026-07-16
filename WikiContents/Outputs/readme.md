@@ -3,6 +3,10 @@
 
 ---
 
+## How the Wiki QA arrived at this answer?
+https://github.com/ai-socialimpact/LLMWiki-NGO-Humaninloop/tree/main/WikiContents/Human-in-loop
+
+
 ## Sample output of Wiki QA system 
 
 Here is the actual output 
