@@ -74,7 +74,7 @@ To maximize downstream question-answering routing utility and achieve perfect is
 
 3. ACUTE CLINICAL TRIGGERS: Isolate severe danger signs or critical emergency workflows into high-density, specialized files (e.g., 'advice_for_trimester1_mothers_with_severe_anemia', 'emergency_water_chlorination_ratios') so that urgent, high-risk queries route instantly to targeted, error-free files.
 
-4. GOVERNMENT SOCIAL PROTECTION AND CASH BENEFIT SCHEMES: Isolate administrative financial aid rules into dedicated files mapping specific government social protection schemes (e.g., eligibility requirements, income/caste restrictions, required documentation checklists).
+4. GOVERNMENT SOCIAL PROTECTION AND CASH BENEFIT SCHEMES: Isolate administrative financial aid rules into dedicated files mapping specific government social protection schemes (e.g., eligibility requirements, income/  restrictions, required documentation checklists).
 """
 ```
 
