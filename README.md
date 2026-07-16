@@ -47,6 +47,8 @@ This framework treats raw documents as uncompiled source code, processing them i
 
 To protect maternal health outcomes, the Stage-1 Router skips unstable vector proximity calculations entirely, relying on direct token matches with high-density Markdown Manifest Tables:
 
+Refer: https://github.com/ai-socialimpact/LLMWiki-NGO-Humaninloop/blob/main/WikiContents/index_stage_routing_protocol.md
+
 1.  **STAGE 0 (Language Translation):** Translates incoming localized user queries directly into English.
 2.  **STAGE 1 (Protocol Selection):** Matches extracted query profile signatures directly against `SECTION_1_ROUTING_DIRECTIVES` to isolate chronological lanes or enforce an acute redirection mandate.
 3.  **STAGE 2 (Inclusion Shortlisting):** Uses `SECTION_2_INCLUSION_KEYWORDS` to shortlist candidate filenames matching core clinical intentions.
