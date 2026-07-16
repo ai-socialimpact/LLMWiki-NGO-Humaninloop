@@ -1,12 +1,16 @@
 
 ## 🎯 High-Accuracy Router Reasoning System
 
-To safeguard maternal health and prevent inaccurate medical guidance, this architecture uses a deterministic, multi-stage routing engine. High-risk queries are automatically steered away from general advice and redirected to specialized clinical nodes reviewed by medical experts (e.g., SNEHA review for severe maternal anemia).
+To safeguard maternal health and prevent inaccurate medical guidance, this architecture uses a deterministic, multi-stage routing engine. 
+
+**High-risk queries are automatically steered away from general advice and redirected to specialized clinical nodes reviewed by medical experts (e.g., SNEHA review for severe maternal anemia).**
+
+So hi-risk preganacy cases are identified and answered with absolute care!! 
 
 
 ### 🚨 Illustrative Example: Emergency Acute Redirection Flow
 
-The routing engine completely bypasses generic advice by scanning for explicit high-alert clinical triggers. Below is an example of a mother asking about severe fatigue and breathing issues, which instantly bypasses normal milestone nutrition tracks and redirects to the critical medical node:
+The routing engine scans for explicit high-alert clinical triggers. Below is an example of a mother in health need, and the Routing automatically moves such user questions into a specical section in Wiki:
 
 ```text
  User Question: "I am 2 months pregnant, feeling very weak and out of breath."
