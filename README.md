@@ -62,6 +62,31 @@ Refer to Automatically generated [Routing_Guidance](https://github.com/ai-social
 
 ## 🏗️ Design of the LLM Wiki Creation System: A Multi-Pass Compilation Pipeline
 
+## 🔍 How it works: The Design 
+
+### Phase 1: Structural Synthesis
+Establishes system parameters, data configurations, and folder rules.
+*   **Pass 1A (Semantic Discovery):** Scrapes text globally to gather raw checklists, configurations, and isolated health metrics into an unrefined inventory list.
+*   **Pass 1B (Topology Design):** Clusters the inventory into 10 to 25 distinct, mutually exclusive directory themes to completely avoid generic document structures.
+*   **Pass 1C (Query Alignment):** Warps and reshapes directory boundaries around real-world user intent distribution logs (such as Gliffic questions) to match critical information demand.
+*   **Pass 1D (Boundary Hardening):** Mitigates node overlap errors by establishing strict narrative laws defining exactly what data is forbidden inside each file.
+*   **Pass 1E (Matrix Schema Locking):** Locks the directory roadmap and files into a verified Pydantic blueprint JSON contract.
+
+### Phase 2: Guardrailed Extraction & Module Building
+Validates the structural maps and builds high-integrity individual markdown files.
+*   **Pass 2A (Audit Cascade):** Minimizes source documentation omissions by iteratively reviewing the blueprint layout against the original raw materials.
+*   **Pass 2B (Linter Sanity Check):** Runs a local, zero-API Python validator to check for filename typos or missing definitions before launching expensive generation loops.
+*   **Pass 2 (Verbatim Materialization):** Feeds isolated source text into the model to construct structured, tabular, and code-bounded markdown documents.
+
+### Phase 3: Hierarchical Semantic Indexing
+Assembles the application-level data routing infrastructure.
+*   **Pass 3A (Tier-1 Cataloging):** Compiles the markdown nodes into a lightweight master roadmap index (`index.md`).
+*   **Pass 3B (Detailed Matrix Compilation):** Generates `index_detailed.md` featuring explicit Markdown Manifest Tables capturing target user profiles, valid milestones, symptom variables, and strict invalidation boundaries.
+
+### Phase 4: Integrity Graph Sealing
+Secures graph consistency and path connections prior to production export.
+*   **Pass 4 (Link Validation Linter):** Evaluates markdown syntax using parsing loops to check if every hyperlink points to a real file on disk, blocks generation on orphaned nodes, and packages the verified engine into a ZIP file for production.
+
 ```text
 [ Raw Source Files ]
          │
@@ -100,28 +125,5 @@ Refer to Automatically generated [Routing_Guidance](https://github.com/ai-social
 [ Verified Runtime-Exportable Knowledge Engine Vault ]
 ```
 
- ## 🔍 Detailed Phase Breakdown
 
-### Phase 1: Structural Synthesis
-Establishes system parameters, data configurations, and folder rules.
-*   **Pass 1A (Semantic Discovery):** Scrapes text globally to gather raw checklists, configurations, and isolated health metrics into an unrefined inventory list.
-*   **Pass 1B (Topology Design):** Clusters the inventory into 10 to 25 distinct, mutually exclusive directory themes to completely avoid generic document structures.
-*   **Pass 1C (Query Alignment):** Warps and reshapes directory boundaries around real-world user intent distribution logs (such as Gliffic questions) to match critical information demand.
-*   **Pass 1D (Boundary Hardening):** Mitigates node overlap errors by establishing strict narrative laws defining exactly what data is forbidden inside each file.
-*   **Pass 1E (Matrix Schema Locking):** Locks the directory roadmap and files into a verified Pydantic blueprint JSON contract.
-
-### Phase 2: Guardrailed Extraction & Module Building
-Validates the structural maps and builds high-integrity individual markdown files.
-*   **Pass 2A (Audit Cascade):** Minimizes source documentation omissions by iteratively reviewing the blueprint layout against the original raw materials.
-*   **Pass 2B (Linter Sanity Check):** Runs a local, zero-API Python validator to check for filename typos or missing definitions before launching expensive generation loops.
-*   **Pass 2 (Verbatim Materialization):** Feeds isolated source text into the model to construct structured, tabular, and code-bounded markdown documents.
-
-### Phase 3: Hierarchical Semantic Indexing
-Assembles the application-level data routing infrastructure.
-*   **Pass 3A (Tier-1 Cataloging):** Compiles the markdown nodes into a lightweight master roadmap index (`index.md`).
-*   **Pass 3B (Detailed Matrix Compilation):** Generates `index_detailed.md` featuring explicit Markdown Manifest Tables capturing target user profiles, valid milestones, symptom variables, and strict invalidation boundaries.
-
-### Phase 4: Integrity Graph Sealing
-Secures graph consistency and path connections prior to production export.
-*   **Pass 4 (Link Validation Linter):** Evaluates markdown syntax using parsing loops to check if every hyperlink points to a real file on disk, blocks generation on orphaned nodes, and packages the verified engine into a ZIP file for production.
 
