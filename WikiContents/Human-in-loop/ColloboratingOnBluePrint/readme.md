@@ -10,6 +10,25 @@ An NGO Administrator can control how precisely the chatbot route answers by tuni
 
 By instructing the LLM Wiki compiler to enforce tighter or broader grouping rules during the initial planning passes, you explicitly change the data breakdown inside the final `master_taxonomy_blueprint.json` contract.
 
+### 🎛️ How Admin Configuration Changes the Blueprint
+
+By modifying the parameters inside the **`INSTRUCTIONs`** framework, you directly impact how the LLM  Wiki splits and organizes overlapping topics like trimesters and clinical risk states:
+
+#### 📉 Setting Broad Topics (Min: 5 / Max: 10)
+* **Admin Directive:** *"Propose an initial balanced directory taxonomy of 5 to 10 distinct, master topics."*
+* **Blueprint Result:** The pipeline compiles info into fewer, larger markdown guides. General nutrition and severe anemia collapse into a single file path.
+* **Routing Effect:** Low-Resolution Routing. The system easily routes to general categories, but risks mixing routine advice with high-risk clinical indicators.
+
+#### 📈 Setting High-Resolution Topics (Min: 10 / Max: 25)
+* **Admin Directive:** *"Propose an initial balanced directory taxonomy of 10 to 25 distinct, master topics."*
+* **Blueprint Result:** The engine separates overlapping concepts. Routine lifestyle trackers are split cleanly away from emergency danger signs.
+* **Routing Effect:** High-Resolution Routing. The Stage 1 router can instantly choose between a safe, routine document and an acute clinical emergency node.
+
+---
+
+
+### 🎛️ Human in the loop: Colloborating with the AI on the Mental Model to the create the desired Blueprint
+
 
 ```text
 [Raw Sources + Use Case Guidance]
@@ -38,21 +57,7 @@ By instructing the LLM Wiki compiler to enforce tighter or broader grouping rule
 
 
 
-### 🎛️ How Admin Configuration Changes the Blueprint
 
-By modifying the parameters inside the **`INSTRUCTIONs`** framework, you directly impact how the LLM  Wiki splits and organizes overlapping topics like trimesters and clinical risk states:
-
-#### 📉 Setting Broad Topics (Min: 5 / Max: 10)
-* **Admin Directive:** *"Propose an initial balanced directory taxonomy of 5 to 10 distinct, master topics."*
-* **Blueprint Result:** The pipeline compiles info into fewer, larger markdown guides. General nutrition and severe anemia collapse into a single file path.
-* **Routing Effect:** Low-Resolution Routing. The system easily routes to general categories, but risks mixing routine advice with high-risk clinical indicators.
-
-#### 📈 Setting High-Resolution Topics (Min: 10 / Max: 25)
-* **Admin Directive:** *"Propose an initial balanced directory taxonomy of 10 to 25 distinct, master topics."*
-* **Blueprint Result:** The engine separates overlapping concepts. Routine lifestyle trackers are split cleanly away from emergency danger signs.
-* **Routing Effect:** High-Resolution Routing. The Stage 1 router can instantly choose between a safe, routine document and an acute clinical emergency node.
-
----
 
 ### 🧬 Sample Blueprint Target Resolution Output
 
