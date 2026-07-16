@@ -3,6 +3,36 @@
 
 To safeguard maternal health and prevent inaccurate medical guidance, this architecture uses a deterministic, multi-stage routing engine. High-risk queries are automatically steered away from general advice and redirected to specialized clinical nodes reviewed by medical experts (e.g., SNEHA review for severe maternal anemia).
 
+
+### 🚨 Illustrative Example: Emergency Acute Redirection Flow
+
+The routing engine completely bypasses generic advice by scanning for explicit high-alert clinical triggers. Below is an example of a mother asking about severe fatigue and breathing issues, which instantly bypasses normal milestone nutrition tracks and redirects to the critical medical node:
+
+```text
+ User Question: "I am 2 months pregnant, feeling very weak and out of breath."
+                         │
+                         ▼
+             ┌───────────────────────┐
+             │ STAGE 0: Translation  │
+             └───────────────────────┘
+                         │ (English Text)
+                         ▼
+             ┌───────────────────────┐
+             │ STAGE 1: Profile Scan │
+             └───────────────────────┘
+                         │
+         [symptom_vector == high_alert]
+                         │
+                         ▼
+    ⚡ TRIGGER_ACUTE_REDIRECTION_MANDATE Activated ⚡
+                         │
+            ┌────────────┴────────────┐
+            ▼                         ▼
+     [ Skip General Info ]    [ Isolate Clinical Node ]
+     X nutrition_tips_t1      ✔ advice_severe_anemia
+```
+
+
 Refer to the complete [Index Stage Routing Protocol Documentation](https://github.com/ai-socialimpact/LLMWiki-NGO-Humaninloop/blob/main/WikiContents/index_stage_routing_protocol.md).
 
 ---
@@ -41,31 +71,3 @@ By adjusting your configuration's **Minimum/Maximum Topic Count**, you control h
 * High-Risk Clinical Match: `advice_for_trimester1_mothers_with_severe_anemia`
 
 
-
-### 🚨 Emergency Acute Redirection Flow
-
-The routing engine completely bypasses generic advice by scanning for explicit high-alert clinical triggers. Below is an example of a mother asking about severe fatigue and breathing issues, which instantly bypasses normal milestone nutrition tracks and redirects to the critical medical node:
-
-```text
- User Question: "I am 2 months pregnant, feeling very weak and out of breath."
-                         │
-                         ▼
-             ┌───────────────────────┐
-             │ STAGE 0: Translation  │
-             └───────────────────────┘
-                         │ (English Text)
-                         ▼
-             ┌───────────────────────┐
-             │ STAGE 1: Profile Scan │
-             └───────────────────────┘
-                         │
-         [symptom_vector == high_alert]
-                         │
-                         ▼
-    ⚡ TRIGGER_ACUTE_REDIRECTION_MANDATE Activated ⚡
-                         │
-            ┌────────────┴────────────┐
-            ▼                         ▼
-     [ Skip General Info ]    [ Isolate Clinical Node ]
-     X nutrition_tips_t1      ✔ advice_severe_anemia
-```
